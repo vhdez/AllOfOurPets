@@ -33,7 +33,7 @@ public class Main {
         rileysCat.describeSelf();
 
         Owner riley = new Owner();
-        riley.name = "riley";
+        riley.name = "rileyp";
         riley.foodAmount = 10;
         riley.patienceAmount = 20;
         riley.cat1 = rileysCat;
