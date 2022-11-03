@@ -66,6 +66,11 @@ public class Main {
         owen.name = "Owen";
         owen.cat1 = owensCat;
 
+        Owner Gia = new Owner();
+        Gia.name = "Gia";
+        Gia.cat1 = GiasCat;
+
+
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
