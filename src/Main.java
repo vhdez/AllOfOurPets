@@ -32,17 +32,6 @@ public class Main {
         mrHsCat.name = "Garfield";
         mrHsCat.describeSelf();
 
-        Cat GiasCat = new Cat();
-        GiasCat.size = "Chunky";
-        GiasCat.color = "Black and White";
-        GiasCat.fur = "Fluffy";
-        GiasCat.age = 2;
-        GiasCat.hasClaws = true;
-        GiasCat.energy = 8;
-        GiasCat.name = "Joey";
-        GiasCat.describeSelf();
-
-
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
@@ -54,7 +43,5 @@ public class Main {
         samsDog.eat();
         rileysDog.bark();
         mrHsCat.purr();
-        GiasCat.purr();
-        GiasCat.kneadOn("Blanket");
     }
 }
