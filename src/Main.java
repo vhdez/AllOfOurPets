@@ -53,7 +53,7 @@ public class Main {
         ChrisCat.describeSelf();
 
         Cat owensCat = new Cat();
-        owensCat.size = "smalled";
+        owensCat.size = "small";
         owensCat.color = "white";
         owensCat.fur = "soft";
         owensCat.age = 1;
@@ -61,6 +61,16 @@ public class Main {
         owensCat.energy = 5;
         owensCat.name = "Snow";
         owensCat.describeSelf();
+
+        Monkey owensMonkey = new Monkey();
+        owensMonkey.size = "small";
+        owensMonkey.color = "brown";
+        owensMonkey.fur = "soft";
+        owensMonkey.age = 2;
+        owensMonkey.energy = 5;
+        owensMonkey.name = "Monkey";
+        owensMonkey.describeSelf();
+
 
         Owner owen = new Owner();
         owen.name = "Owen";
