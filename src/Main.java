@@ -22,6 +22,23 @@ public class Main {
         rileysDog.name = "Graham";
         rileysDog.describeSelf();
 
+        Cat rileysCat = new Cat();
+        rileysCat.size = "Chubby";
+        rileysCat.color = "orange and white";
+        rileysCat.fur = "soft";
+        rileysCat.age = 2;
+        rileysCat.hasClaws = true;
+        rileysCat.energy = 3;
+        rileysCat.name = "Charles";
+        rileysCat.describeSelf();
+
+        Owner riley = new Owner();
+        riley.name = "riley";
+        riley.foodAmount = 10;
+        riley.patienceAmount = 20;
+        riley.cat1 = rileysCat;
+        rileysCat.owner = riley;
+
         Cat mrHsCat = new Cat();
         mrHsCat.size = "fat";
         mrHsCat.color = "orange";
@@ -42,6 +59,7 @@ public class Main {
         samsDog.bark();
         samsDog.eat();
         rileysDog.bark();
+        rileysCat.kneadOn("hoodie");
         mrHsCat.purr();
     }
 }
