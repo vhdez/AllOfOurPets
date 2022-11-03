@@ -48,11 +48,11 @@ public class Main {
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
-        // Pets and Owners do some actions
-        owensCat.purr();
+        // Pets and Owners do some action
         samsDog.bark();
         samsDog.eat();
         rileysDog.bark();
         mrHsCat.purr();
+        owensCat.purr();
     }
 }
