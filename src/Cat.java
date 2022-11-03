@@ -24,7 +24,11 @@ public class Cat {
     }
 
     void kneadOn(String what) {
-        System.out.println(name + " kneaded on " + owner.name +"'s " + what);
+        if (owner != null) {
+            System.out.println(name + " kneaded on " + owner.name + "'s " + what);
+        } else {
+            System.out.println(name + " kneaded on someone's " + what);
+        }
     }
 
     void purr() {
