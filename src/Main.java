@@ -84,7 +84,7 @@ public class Main {
         owen.cat1 = owensCat;
 
         Owner Gia = new Owner();
-        Gia.name = "Gia";
+        Gia.name = "Gia Jack";
         Gia.cat1 = GiasCat;
 
 
