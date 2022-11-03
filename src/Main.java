@@ -13,7 +13,7 @@ public class Main {
         samsDog.describeSelf();
 
         Dog rileysDog = new Dog();
-        rileysDog.size = "mediumn";
+        rileysDog.size = "medium";
         rileysDog.color = "tan";
         rileysDog.fur = "short";
         rileysDog.age = 1;
@@ -40,6 +40,7 @@ public class Main {
         System.out.println("Let's see what the pets and owners will do:");
         // Pets and Owners do some actions
         samsDog.bark();
+        samsDog.eat();
         rileysDog.bark();
         mrHsCat.purr();
     }

@@ -21,8 +21,12 @@ public class Dog {
         }
     }
     void eat() {
-        energy = energy + 1;
-        System.out.println("Yum, now " + name + "'s energy is at " + energy);
+        if (owner != null && owner.foodAmount > 0) {
+            energy = energy + 1;
+            System.out.println("Yum, now " + name + "'s energy is at " + energy);
+        } else {
+            System.out.println("GROWL I don't have an owner to feed me!");
+        }
     }
 
     void sleep() {
