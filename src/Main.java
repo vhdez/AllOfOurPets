@@ -32,6 +32,16 @@ public class Main {
         mrHsCat.name = "Garfield";
         mrHsCat.describeSelf();
 
+        Cat owensCat = new Cat();
+        owensCat.size = "smalled";
+        owensCat.color = "white";
+        owensCat.fur = "soft";
+        owensCat.age = 1;
+        owensCat.hasClaws = false;
+        owensCat.energy = 5;
+        owensCat.name = "Snow";
+        owensCat.describeSelf();
+
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
@@ -39,6 +49,7 @@ public class Main {
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
         // Pets and Owners do some actions
+        owensCat.purr();
         samsDog.bark();
         samsDog.eat();
         rileysDog.bark();
