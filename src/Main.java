@@ -65,11 +65,11 @@ public class Main {
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
-        owen.describeSelf();
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
+        owen.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
