@@ -32,6 +32,16 @@ public class Main {
         mrHsCat.name = "Garfield";
         mrHsCat.describeSelf();
 
+        Cat GiasCat = new Cat();
+        GiasCat.size = "Chunky";
+        GiasCat.color = "Black and White";
+        GiasCat.fur = "Fluffy";
+        GiasCat.age = 2;
+        GiasCat.hasClaws = true;
+        GiasCat.energy = 8;
+        GiasCat.name = "Joey";
+        GiasCat.describeSelf();
+
         Cat ChrisCat = new Cat();
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
@@ -68,6 +78,8 @@ public class Main {
         samsDog.eat();
         rileysDog.bark();
         mrHsCat.purr();
+        GiasCat.purr();
+        GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
     }
