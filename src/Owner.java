@@ -5,6 +5,8 @@ public class Owner {
     Cat cat1;
     Cat cat2;
     Snake snake1;
+
+    Panda panda1;
     Frog frog1;
     int foodAmount;
     int patienceAmount;
@@ -56,6 +58,9 @@ public class Owner {
         }
         if (frog1 != null ) {
             System.out.println("Owner " + name + " owns " + frog1.name);
+        }
+        if (panda1 != null ) {
+            System.out.println("Owner " + name + " owns " + panda1.name);
         }
     }
 }

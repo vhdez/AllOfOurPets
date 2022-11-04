@@ -156,11 +156,13 @@ public class Main {
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
+        Owner samG = new Owner();
         owen.describeSelf();
         Chris.describeSelf();
         riley.describeSelf();
         Gia.describeSelf();
         Dinajda.describeSelf();
+        samG.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
@@ -180,8 +182,9 @@ public class Main {
         ChrisCat.purr();
 
         //Sam Work begin
-        Owner samG = new Owner();
-        samG.name = "Sam G";
+
+        samG.foodAmount = 50;
+        samG.patienceAmount = 100;
         Cat samGcat = new Cat();
         samGcat.size = "Large";
         samGcat.color = "orange and white";
@@ -192,17 +195,27 @@ public class Main {
         samGcat.name = "Pickles";
         samGcat.describeSelf();
 
+
         Panda samGpanda = new Panda();
         samGpanda.species = "panda";
+        samGpanda.owner = samG;
         samGpanda.size = "small";
         samGpanda.height = "short";
         samGpanda.color = "black and white";
         samGpanda.fur = "soft";
         samGpanda.age = 2;
+        samGpanda.pandaAbility = "climbing";
         samGpanda.energy = 2;
         samGpanda.name = "Kikkoman";
         samGpanda.describeSelf();
+        samGpanda.eat();
+        samGpanda.climb();
+        samGpanda.sleep();
 
+
+        samG.panda1 = samGpanda;
+        samG.cat1 = samGcat;
+        samG.name = "Sam G";
 
         dinajdasCat.rollUpAndSleep();
         owensMonkey.bark();
