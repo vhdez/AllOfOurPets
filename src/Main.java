@@ -1,4 +1,6 @@
-public class Main {
+public class
+
+Main {
     public static void main(String[] args) {
         System.out.println("Let's introduce all of our pets:");
 
@@ -135,6 +137,16 @@ public class Main {
         dinajdasCat.name = "Loki";
         dinajdasCat.describeSelf();
 
+        Dog PhillyBoySamDog = new Dog();
+        PhillyBoySamDog.size = "medium";
+        PhillyBoySamDog.color = "black";
+        PhillyBoySamDog.fur = "short";
+        PhillyBoySamDog.age = 2;
+        PhillyBoySamDog.energy = 9;
+        PhillyBoySamDog.limbs = "paws";
+        PhillyBoySamDog.name = "Widow";
+        PhillyBoySamDog.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -154,6 +166,10 @@ public class Main {
         Dinajda.foodAmount = 12;
         Dinajda.patienceAmount = 10;
         Dinajda.cat1 = dinajdasCat;
+
+        Owner PhillyBoySam = new Owner ();
+        PhillyBoySam.name = "pbs";
+        PhillyBoySam.dog1  = PhillyBoySamDog;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
