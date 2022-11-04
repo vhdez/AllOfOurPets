@@ -64,7 +64,7 @@ public class Main {
         GiasCat.fur = "Fluffy";
         GiasCat.age = 2;
         GiasCat.hasClaws = true;
-        GiasCat.energy = 8;
+        GiasCat.energy = 10;
         GiasCat.name = "Joey";
         GiasCat.describeSelf();
 
@@ -141,8 +141,8 @@ public class Main {
 
         Owner Gia = new Owner();
         Gia.name = "Gia";
-        Gia.foodAmount = 10;
-        Gia.patienceAmount = 50;
+        Gia.foodAmount = 17;
+        Gia.patienceAmount = 52;
         Gia.cat1 = GiasCat;
 
        Owner Elijah = new Owner();
