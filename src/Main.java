@@ -1,4 +1,6 @@
-public class Main {
+public class
+
+Main {
     public static void main(String[] args) {
         System.out.println("Let's introduce all of our pets:");
 
@@ -161,6 +163,16 @@ public class Main {
         dinajdasCat.name = "Loki";
         dinajdasCat.describeSelf();
 
+        Dog PhillyBoySamDog = new Dog();
+        PhillyBoySamDog.size = "medium";
+        PhillyBoySamDog.color = "black";
+        PhillyBoySamDog.fur = "short";
+        PhillyBoySamDog.age = 2;
+        PhillyBoySamDog.energy = 9;
+        PhillyBoySamDog.limbs = "paws";
+        PhillyBoySamDog.name = "Widow";
+        PhillyBoySamDog.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -187,7 +199,7 @@ public class Main {
         PhillyBoySam.name = "pbs";
         PhillyBoySam.foodAmount = 15;
         PhillyBoySam.patienceAmount = 12;
-       // PhillyBoySam.dog1  = PhillyBoySamDog;
+        PhillyBoySam.dog1  = PhillyBoySamDog;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
@@ -198,13 +210,7 @@ public class Main {
         Gia.describeSelf();
         Dinajda.describeSelf();
 
-        System.out.println("Petsitter");
-        MonkeySitter owensMonkeySitter = new MonkeySitter();
-        owensMonkeySitter.age = 17;
-        owensMonkeySitter.name = "Owen";
-        owensMonkeySitter.location = "Philly";
-        owensMonkeySitter.describeSelf();
-
+        System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
         // Pets and Owners do some action
         samsDog.bark();
@@ -257,7 +263,7 @@ public class Main {
         dinajdasCat.rollUpAndSleep();
         GiasCat.rollUpAndSleep();
         GiasCat.eat();
-        owensMonkey.WOOP();
+        owensMonkey.bark();
         //Chris' pets actions
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
