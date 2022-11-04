@@ -105,7 +105,7 @@ public class Main {
         owen.cat1 = owensCat;
 
         Owner Gia = new Owner();
-        Gia.name = "Gia Jack";
+        Gia.name = "Gia";
         Gia.cat1 = GiasCat;
 
        Owner Elijah = new Owner();
@@ -116,6 +116,7 @@ public class Main {
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
+        Gia.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
