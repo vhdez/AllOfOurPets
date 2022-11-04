@@ -32,11 +32,20 @@ public class Main {
         rileysCat.name = "Charles";
         rileysCat.describeSelf();
 
+        Snake rileysSnake = new Snake();
+        rileysSnake.size = "Long";
+        rileysSnake.color = "green";
+        rileysSnake.age = 3;
+        rileysSnake.energy = 1;
+        rileysSnake.name = "Greenbean";
+        rileysSnake.describeSelf();
+
         Owner riley = new Owner();
-        riley.name = "rileyp";
+        riley.name = "riley";
         riley.foodAmount = 10;
         riley.patienceAmount = 20;
         riley.cat1 = rileysCat;
+        riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
 
         Cat mrHsCat = new Cat();
@@ -86,6 +95,16 @@ public class Main {
         owensCat.name = "Snow";
         owensCat.describeSelf();
 
+        Cat ElijahsCat = new Cat();
+        ElijahsCat.size = "medium";
+        ElijahsCat.color = "grey";
+        ElijahsCat.fur = "soft";
+        ElijahsCat.age = 2;
+        ElijahsCat.hasClaws = true;
+        ElijahsCat.energy = 6;
+        ElijahsCat.name = "Atticus";
+        ElijahsCat.describeSelf();
+
         Monkey owensMonkey = new Monkey();
         owensMonkey.size = "small";
         owensMonkey.color = "brown";
@@ -97,20 +116,35 @@ public class Main {
 
 
 
+        Cat dinajdasCat = new Cat();
+        dinajdasCat.size = "muscular";
+        dinajdasCat.color = "grey tabby";
+        dinajdasCat.fur = "smooth";
+        dinajdasCat.age = 3;
+        dinajdasCat.hasClaws = true;
+        dinajdasCat.energy = 7;
+        dinajdasCat.name = "Loki";
+        dinajdasCat.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
 
         Owner Gia = new Owner();
-        Gia.name = "Gia Jack";
+        Gia.name = "Gia";
         Gia.cat1 = GiasCat;
 
+       Owner Elijah = new Owner();
+       Elijah.name = "Elijah";
+       Elijah.cat1 = ElijahsCat;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
         Chris.describeSelf();
+        riley.describeSelf();
+        Gia.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
@@ -119,11 +153,15 @@ public class Main {
         samsDog.eat();
         rileysDog.bark();
         rileysCat.kneadOn("hoodie");
+        rileysSnake.rollUpAndSleep();
+        rileysSnake.eat();
+        rileysSnake.play();
         mrHsCat.purr();
         GiasCat.purr();
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+        dinajdasCat.rollUpAndSleep();
         owensMonkey.bark();
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
