@@ -7,6 +7,8 @@ public class Owner {
     Snake snake1;
     Frog frog1;
     int foodAmount;
+
+    int moneyAmount;
     int patienceAmount;
 
     void feed(Dog dog) {
