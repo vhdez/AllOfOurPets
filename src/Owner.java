@@ -37,6 +37,7 @@ public class Owner {
 
     void playWith(Cat cat) {
         cat.kneadOn("lap");
+        //System.out.println(name + "kneads on" + cat.owner + what);
     }
 
     void describeSelf() {
