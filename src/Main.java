@@ -79,6 +79,16 @@ public class Main {
         owensCat.name = "Snow";
         owensCat.describeSelf();
 
+        Cat dinajdasCat = new Cat();
+        dinajdasCat.size = "muscular";
+        dinajdasCat.color = "grey tabby";
+        dinajdasCat.fur = "smooth";
+        dinajdasCat.age = 3;
+        dinajdasCat.hasClaws = true;
+        dinajdasCat.energy = 7;
+        dinajdasCat.name = "Loki";
+        dinajdasCat.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -105,5 +115,6 @@ public class Main {
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+        dinajdasCat.rollUpAndSleep();
     }
 }
