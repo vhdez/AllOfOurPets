@@ -187,7 +187,7 @@ public class Main {
         PhillyBoySam.name = "pbs";
         PhillyBoySam.foodAmount = 15;
         PhillyBoySam.patienceAmount = 12;
-        PhillyBoySam.dog1  = PhillyBoySamDog;
+       // PhillyBoySam.dog1  = PhillyBoySamDog;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
@@ -203,7 +203,7 @@ public class Main {
         owensMonkeySitter.age = 17;
         owensMonkeySitter.name = "Owen";
         owensMonkeySitter.location = "Philly";
-        owensMonkey.describeSelf();
+        owensMonkeySitter.describeSelf();
 
         System.out.println("Let's see what the pets and owners will do:");
         // Pets and Owners do some action
@@ -257,7 +257,7 @@ public class Main {
         dinajdasCat.rollUpAndSleep();
         GiasCat.rollUpAndSleep();
         GiasCat.eat();
-        owensMonkey.bark();
+        owensMonkey.WOOP();
         //Chris' pets actions
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
