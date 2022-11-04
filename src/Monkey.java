@@ -10,18 +10,25 @@ public class Monkey {
 
     int energy;
 
+    int benchWeight;
+
+    int bodyFat;
+
     String limbs;
 
     String name;
+
+    String tail;
+
 
     Owner owner;
 
     // Methods
     void describeSelf() {
-        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " dog with " + fur + " fur.");
+        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " monkey with " + fur + " fur and my tail is" + tail+ " . I can bench " + benchWeight + "kg and my body fat percentage is " + bodyFat + ".");
     }
 
-    void bark() {
+    void WOOP() {
         System.out.println(name + " says: WOO!");
         if (owner != null) {
             owner.patienceAmount = owner.patienceAmount - 1;
