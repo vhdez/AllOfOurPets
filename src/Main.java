@@ -79,11 +79,20 @@ public class Main {
         ChrisCat.name = "Fifi";
         ChrisCat.describeSelf();
 
+        Frog ChrisFrog = new Frog();
+        ChrisFrog.size = "tiny";
+        ChrisFrog.color = "brown";
+        ChrisFrog.texture = "smooth";
+        ChrisFrog.age = 2;
+        ChrisFrog.croakSound = " baritone";
+        ChrisFrog.fullness = 5;
+        ChrisFrog.name = "Frogston";
+        ChrisFrog.describeSelf();
+
         Owner Chris = new Owner();
         Chris.name = "Chris";
         Chris.cat1 = ChrisCat;
-        int foodAmount = 10;
-        int patienceAmount = 5;
+        Chris.frog1 = ChrisFrog;
 
         Cat owensCat = new Cat();
         owensCat.size = "small";
@@ -173,5 +182,9 @@ public class Main {
         owensMonkey.bark();
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
+        ChrisFrog.croak();
+        ChrisFrog.eat();
+        ChrisFrog.leap();
+        Chris.feed(ChrisCat);
     }
 }
