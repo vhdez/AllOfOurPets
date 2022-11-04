@@ -38,4 +38,9 @@ public class Dog {
         energy = energy - 1;
         System.out.println("Fun!, now " + name + "'s energy is at " + energy);
     }
+
+    void walk() {
+        energy = energy - 1;
+        System.out.println("Yay!, I'm going on a walk. Now " + name + "'s energy is at " + energy);
+    }
 }
