@@ -64,11 +64,11 @@ public class Main {
         GiasCat.fur = "Fluffy";
         GiasCat.age = 2;
         GiasCat.hasClaws = true;
-        GiasCat.energy = 8;
+        GiasCat.energy = 10;
         GiasCat.name = "Joey";
         GiasCat.describeSelf();
 
-
+//Chris' cat, frog, and owner
         Cat ChrisCat = new Cat();
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
@@ -123,7 +123,14 @@ public class Main {
         owensMonkey.name = "Monkey";
         owensMonkey.describeSelf();
 
-
+       Fox ElijahsFox = new Fox();
+        ElijahsFox.size = "small";
+        ElijahsFox.color = "red";
+        ElijahsFox.fur = "rough";
+        ElijahsFox.age = 4;
+        ElijahsFox.energy = 8;
+        ElijahsFox.name = "Goku";
+        ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
         dinajdasCat.size = "muscular";
@@ -141,6 +148,8 @@ public class Main {
 
         Owner Gia = new Owner();
         Gia.name = "Gia";
+        Gia.foodAmount = 17;
+        Gia.patienceAmount = 52;
         Gia.cat1 = GiasCat;
 
        Owner Elijah = new Owner();
@@ -205,7 +214,10 @@ public class Main {
 
 
         dinajdasCat.rollUpAndSleep();
+        GiasCat.rollUpAndSleep();
+        GiasCat.eat();
         owensMonkey.bark();
+        //Chris' pets actions
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
         ChrisFrog.croak();
