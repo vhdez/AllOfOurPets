@@ -14,6 +14,18 @@ Main {
         samsDog.name = "Widow";
         samsDog.describeSelf();
 
+        Dog SirajsDog = new Dog();
+        SirajsDog.size = "small";
+        SirajsDog.color = "brown";
+        SirajsDog.fur = "fluffy";
+        SirajsDog.age = 7;
+        SirajsDog.energy = 70;
+        SirajsDog.limbs = "legs";
+        SirajsDog.name = "Smokey";
+        SirajsDog.describeSelf();
+
+
+
         Dog rileysDog = new Dog();
         rileysDog.size = "medium";
         rileysDog.color = "tan";
@@ -138,7 +150,7 @@ Main {
         ElijahsFox.fur = "rough";
         ElijahsFox.age = 4;
         ElijahsFox.energy = 8;
-        ElijahsFox.name = "Goku";
+        ElijahsFox.name = "Mena";
         ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
@@ -211,6 +223,7 @@ Main {
         GiasCat.purr();
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
+        SirajsDog.bark();
         ChrisCat.purr();
 
         //Sam Work begin
@@ -237,8 +250,28 @@ Main {
         samGpanda.name = "Kikkoman";
         samGpanda.describeSelf();
 
+        Parrot GiasParrot = new Parrot();
+        GiasParrot.size = "small";
+        GiasParrot.color = "Blue Red and Yellow";
+        GiasParrot.age = 5;
+        GiasParrot.energy = 2;
+        GiasParrot.name = "Polly";
+        GiasParrot.describeSelf();
+
+
 
         dinajdasCat.rollUpAndSleep();
+        GiasCat.rollUpAndSleep();
+        GiasCat.eat();
+        owensMonkey.bark();
+        //Chris' pets actions
+        ChrisCat.kneadOn("blanket");
+        ChrisCat.eat();
+        ChrisFrog.croak();
+        ChrisFrog.eat();
+        ChrisFrog.leap();
+        Chris.feed(ChrisCat);
+        GiasParrot.talk();
 
         System.out.println();
         System.out.println("Let's introduce all of the Pet Sitters:");
