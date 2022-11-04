@@ -142,6 +142,16 @@ public class Main {
         dinajdasCat.name = "Loki";
         dinajdasCat.describeSelf();
 
+        capybara dinajdasCapy = new capybara();
+        dinajdasCapy.size = "chunky";
+        dinajdasCapy.color = "brown";
+        dinajdasCapy.fur = "short";
+        dinajdasCapy.age = 2;
+        dinajdasCapy.hasClaws = false;
+        dinajdasCapy.energy = 3;
+        dinajdasCapy.name = "Capy";
+        dinajdasCapy.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -161,6 +171,7 @@ public class Main {
         Dinajda.foodAmount = 12;
         Dinajda.patienceAmount = 10;
         Dinajda.cat1 = dinajdasCat;
+
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
@@ -225,5 +236,7 @@ public class Main {
         ChrisFrog.leap();
         Chris.feed(ChrisCat);
         dinajdasCat.eat();
+        dinajdasCapy.describeSelf();
+        dinajdasCapy.sleep();
     }
 }
