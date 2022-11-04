@@ -89,6 +89,7 @@ public class Main {
         owensMonkey.describeSelf();
 
 
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -115,5 +116,6 @@ public class Main {
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+        owensMonkey.bark();
     }
 }

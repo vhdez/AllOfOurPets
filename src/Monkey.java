@@ -22,7 +22,7 @@ public class Monkey {
     }
 
     void bark() {
-        System.out.println(name + " says: Woof!");
+        System.out.println(name + " says: WOO!");
         if (owner != null) {
             owner.patienceAmount = owner.patienceAmount - 1;
         }
