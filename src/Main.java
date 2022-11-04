@@ -12,6 +12,16 @@ public class Main {
         samsDog.name = "Widow";
         samsDog.describeSelf();
 
+        Dog SirajsDog = new Dog();
+        SirajsDog.size = "small";
+        SirajsDog.color = "brown";
+        SirajsDog.fur = "fluffy";
+        SirajsDog.age = 7;
+        SirajsDog.energy = 70;
+        SirajsDog.limbs = "legs";
+        SirajsDog.name = "Smokey";
+        SirajsDog.describeSelf();
+
         Dog rileysDog = new Dog();
         rileysDog.size = "medium";
         rileysDog.color = "tan";
@@ -54,5 +64,6 @@ public class Main {
         rileysDog.bark();
         mrHsCat.purr();
         owensCat.purr();
+        SirajsDog.bark();
     }
 }
