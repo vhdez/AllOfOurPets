@@ -77,7 +77,7 @@ public class Main {
         int patienceAmount = 5;
 
         Cat owensCat = new Cat();
-        owensCat.size = "smalled";
+        owensCat.size = "small";
         owensCat.color = "white";
         owensCat.fur = "soft";
         owensCat.age = 1;
@@ -85,6 +85,17 @@ public class Main {
         owensCat.energy = 5;
         owensCat.name = "Snow";
         owensCat.describeSelf();
+
+        Monkey owensMonkey = new Monkey();
+        owensMonkey.size = "small";
+        owensMonkey.color = "brown";
+        owensMonkey.fur = "soft";
+        owensMonkey.age = 2;
+        owensMonkey.energy = 5;
+        owensMonkey.name = "Monkey";
+        owensMonkey.describeSelf();
+
+
 
         Owner owen = new Owner();
         owen.name = "Owen";
@@ -113,6 +124,7 @@ public class Main {
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+        owensMonkey.bark();
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
     }
