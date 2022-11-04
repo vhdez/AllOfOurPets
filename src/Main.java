@@ -198,6 +198,7 @@ public class Main {
         owensMonkeySitter.age = 17;
         owensMonkeySitter.name = "Owen";
         owensMonkeySitter.location = "Philly";
+        owensMonkey.describeSelf();
 
         System.out.println("Let's see what the pets and owners will do:");
         // Pets and Owners do some action
