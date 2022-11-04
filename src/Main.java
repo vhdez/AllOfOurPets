@@ -68,6 +68,7 @@ public class Main {
         GiasCat.name = "Joey";
         GiasCat.describeSelf();
 
+
         Cat ChrisCat = new Cat();
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
@@ -77,6 +78,21 @@ public class Main {
         ChrisCat.energy = 7;
         ChrisCat.name = "Fifi";
         ChrisCat.describeSelf();
+
+        Frog ChrisFrog = new Frog();
+        ChrisFrog.size = "tiny";
+        ChrisFrog.color = "brown";
+        ChrisFrog.texture = "smooth";
+        ChrisFrog.age = 2;
+        ChrisFrog.croakSound = " baritone";
+        ChrisFrog.fullness = 5;
+        ChrisFrog.name = "Frogston";
+        ChrisFrog.describeSelf();
+
+        Owner Chris = new Owner();
+        Chris.name = "Chris";
+        Chris.cat1 = ChrisCat;
+        Chris.frog1 = ChrisFrog;
 
         Cat owensCat = new Cat();
         owensCat.size = "small";
@@ -133,12 +149,20 @@ public class Main {
        Elijah.name = "Elijah";
        Elijah.cat1 = ElijahsCat;
 
+        Owner Dinajda = new Owner();
+        Dinajda.name = "Dinajda";
+        Dinajda.foodAmount = 12;
+        Dinajda.patienceAmount = 10;
+        Dinajda.cat1 = dinajdasCat;
+
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
+        Chris.describeSelf();
         riley.describeSelf();
         Gia.describeSelf();
+        Dinajda.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
@@ -156,8 +180,41 @@ public class Main {
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+
+        //Sam Work begin
+        Owner samG = new Owner();
+        samG.name = "Sam G";
+        Cat samGcat = new Cat();
+        samGcat.size = "Large";
+        samGcat.color = "orange and white";
+        samGcat.fur = "soft";
+        samGcat.age = 4;
+        samGcat.hasClaws = true;
+        samGcat.energy = 9;
+        samGcat.name = "Pickles";
+        samGcat.describeSelf();
+
+        Panda samGpanda = new Panda();
+        samGpanda.species = "panda";
+        samGpanda.size = "small";
+        samGpanda.height = "short";
+        samGpanda.color = "black and white";
+        samGpanda.fur = "soft";
+        samGpanda.age = 2;
+        samGpanda.energy = 2;
+        samGpanda.name = "Kikkoman";
+        samGpanda.describeSelf();
+
+
         dinajdasCat.rollUpAndSleep();
         GiasCat.rollUpAndSleep();
         GiasCat.eat();
+        owensMonkey.bark();
+        ChrisCat.kneadOn("blanket");
+        ChrisCat.eat();
+        ChrisFrog.croak();
+        ChrisFrog.eat();
+        ChrisFrog.leap();
+        Chris.feed(ChrisCat);
     }
 }
