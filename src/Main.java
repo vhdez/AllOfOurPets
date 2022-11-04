@@ -234,8 +234,28 @@ public class Main {
         samGpanda.name = "Kikkoman";
         samGpanda.describeSelf();
 
+        Parrot GiasParrot = new Parrot();
+        GiasParrot.size = "small";
+        GiasParrot.color = "Blue Red and Yellow";
+        GiasParrot.age = 5;
+        GiasParrot.energy = 2;
+        GiasParrot.name = "Polly";
+        GiasParrot.describeSelf();
+
+
 
         dinajdasCat.rollUpAndSleep();
+        GiasCat.rollUpAndSleep();
+        GiasCat.eat();
+        owensMonkey.bark();
+        //Chris' pets actions
+        ChrisCat.kneadOn("blanket");
+        ChrisCat.eat();
+        ChrisFrog.croak();
+        ChrisFrog.eat();
+        ChrisFrog.leap();
+        Chris.feed(ChrisCat);
+        GiasParrot.talk();
 
         System.out.println();
         System.out.println("Let's introduce all of the Pet Sitters:");
