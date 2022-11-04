@@ -50,6 +50,13 @@ Main {
         riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
 
+        Pet_Sitter james = new Pet_Sitter();
+        james.name = "James";
+        james.foodAmount = 20;
+        james.patienceAmount = 20;
+        james.cat1 = rileysCat;
+        james.snake1 = rileysSnake;
+
         Cat mrHsCat = new Cat();
         mrHsCat.size = "fat";
         mrHsCat.color = "orange";
@@ -125,7 +132,14 @@ Main {
         owensMonkey.name = "Monkey";
         owensMonkey.describeSelf();
 
-
+       Fox ElijahsFox = new Fox();
+        ElijahsFox.size = "small";
+        ElijahsFox.color = "red";
+        ElijahsFox.fur = "rough";
+        ElijahsFox.age = 4;
+        ElijahsFox.energy = 8;
+        ElijahsFox.name = "Goku";
+        ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
         dinajdasCat.size = "muscular";
@@ -159,6 +173,8 @@ Main {
 
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
+       Elijah.foodAmount = 20;
+       Elijah.patienceAmount = 13;
        Elijah.cat1 = ElijahsCat;
 
         Owner Dinajda = new Owner();
@@ -223,15 +239,13 @@ Main {
 
 
         dinajdasCat.rollUpAndSleep();
-        GiasCat.rollUpAndSleep();
-        GiasCat.eat();
-        owensMonkey.bark();
-        //Chris' pets actions
-        ChrisCat.kneadOn("blanket");
-        ChrisCat.eat();
-        ChrisFrog.croak();
-        ChrisFrog.eat();
-        ChrisFrog.leap();
-        Chris.feed(ChrisCat);
+
+        System.out.println();
+        System.out.println("Let's introduce all of the Pet Sitters:");
+        james.describeSelf();
+
+        System.out.println();
+        System.out.println("Now the Pet Sitters are going to do their job:");
+        james.walk(rileysSnake);
     }
 }

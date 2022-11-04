@@ -26,4 +26,8 @@ public class Snake {
         System.out.println(name + " is going to go hide. go find them." + name + "'s energy is now at" + energy);
 
     }
+    void walk() {
+        energy = energy - 1;
+        System.out.println("Yay!, I'm going on a walk. Now " + name + "'s energy is at " + energy);
+    }
 }
