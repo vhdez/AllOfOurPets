@@ -14,18 +14,6 @@ Main {
         samsDog.name = "Widow";
         samsDog.describeSelf();
 
-        Dog SirajsDog = new Dog();
-        SirajsDog.size = "small";
-        SirajsDog.color = "brown";
-        SirajsDog.fur = "fluffy";
-        SirajsDog.age = 7;
-        SirajsDog.energy = 70;
-        SirajsDog.limbs = "legs";
-        SirajsDog.name = "Smokey";
-        SirajsDog.describeSelf();
-
-
-
         Dog rileysDog = new Dog();
         rileysDog.size = "medium";
         rileysDog.color = "tan";
@@ -61,13 +49,6 @@ Main {
         riley.cat1 = rileysCat;
         riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
-
-        Pet_Sitter james = new Pet_Sitter();
-        james.name = "James";
-        james.foodAmount = 20;
-        james.patienceAmount = 20;
-        james.cat1 = rileysCat;
-        james.snake1 = rileysSnake;
 
         Cat mrHsCat = new Cat();
         mrHsCat.size = "fat";
@@ -150,7 +131,7 @@ Main {
         ElijahsFox.fur = "rough";
         ElijahsFox.age = 4;
         ElijahsFox.energy = 8;
-        ElijahsFox.name = "Mena";
+        ElijahsFox.name = "Goku";
         ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
@@ -173,6 +154,16 @@ Main {
         PhillyBoySamDog.name = "Widow";
         PhillyBoySamDog.describeSelf();
 
+        capybara dinajdasCapy = new capybara();
+        dinajdasCapy.size = "chunky";
+        dinajdasCapy.color = "brown";
+        dinajdasCapy.fur = "short";
+        dinajdasCapy.age = 2;
+        dinajdasCapy.hasClaws = false;
+        dinajdasCapy.energy = 3;
+        dinajdasCapy.name = "Capy";
+        dinajdasCapy.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -185,8 +176,6 @@ Main {
 
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
-       Elijah.foodAmount = 20;
-       Elijah.patienceAmount = 13;
        Elijah.cat1 = ElijahsCat;
 
         Owner Dinajda = new Owner();
@@ -194,6 +183,7 @@ Main {
         Dinajda.foodAmount = 12;
         Dinajda.patienceAmount = 10;
         Dinajda.cat1 = dinajdasCat;
+
 
         Owner PhillyBoySam = new Owner ();
         PhillyBoySam.name = "pbs";
@@ -227,7 +217,6 @@ Main {
         GiasCat.purr();
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
-        SirajsDog.bark();
         ChrisCat.purr();
 
         //Sam Work begin
@@ -261,6 +250,7 @@ Main {
         samGpanda.climb();
         samGpanda.sleep();
 
+
         Parrot GiasParrot = new Parrot();
         GiasParrot.size = "small";
         GiasParrot.color = "Blue Red and Yellow";
@@ -286,14 +276,9 @@ Main {
         ChrisFrog.eat();
         ChrisFrog.leap();
         Chris.feed(ChrisCat);
-        GiasParrot.talk();
+        dinajdasCat.eat();
+        dinajdasCapy.describeSelf();
+        dinajdasCapy.sleep();
 
-        System.out.println();
-        System.out.println("Let's introduce all of the Pet Sitters:");
-        james.describeSelf();
-
-        System.out.println();
-        System.out.println("Now the Pet Sitters are going to do their job:");
-        james.walk(rileysSnake);
     }
 }
