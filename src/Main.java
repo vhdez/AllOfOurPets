@@ -83,11 +83,11 @@ public class Main {
         GiasCat.fur = "Fluffy";
         GiasCat.age = 2;
         GiasCat.hasClaws = true;
-        GiasCat.energy = 8;
+        GiasCat.energy = 10;
         GiasCat.name = "Joey";
         GiasCat.describeSelf();
 
-
+//Chris' cat, frog, and owner
         Cat ChrisCat = new Cat();
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
@@ -123,6 +123,16 @@ public class Main {
         owensCat.name = "Snow";
         owensCat.describeSelf();
 
+        Cat ElijahsCat = new Cat();
+        ElijahsCat.size = "medium";
+        ElijahsCat.color = "grey";
+        ElijahsCat.fur = "soft";
+        ElijahsCat.age = 2;
+        ElijahsCat.hasClaws = true;
+        ElijahsCat.energy = 6;
+        ElijahsCat.name = "Atticus";
+        ElijahsCat.describeSelf();
+
         Monkey owensMonkey = new Monkey();
         owensMonkey.size = "small";
         owensMonkey.color = "brown";
@@ -135,7 +145,14 @@ public class Main {
         owensMonkey.name = "Monkey";
         owensMonkey.describeSelf();
 
-
+       Fox ElijahsFox = new Fox();
+        ElijahsFox.size = "small";
+        ElijahsFox.color = "red";
+        ElijahsFox.fur = "rough";
+        ElijahsFox.age = 4;
+        ElijahsFox.energy = 8;
+        ElijahsFox.name = "Goku";
+        ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
         dinajdasCat.size = "muscular";
@@ -157,6 +174,8 @@ public class Main {
 
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
+       Elijah.foodAmount = 20;
+       Elijah.patienceAmount = 13;
        Elijah.cat1 = ElijahsCat;
 
         Owner Dinajda = new Owner();
@@ -169,6 +188,7 @@ public class Main {
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
+        Chris.describeSelf();
         riley.describeSelf();
         Gia.describeSelf();
         Dinajda.describeSelf();
@@ -193,15 +213,42 @@ public class Main {
         GiasCat.purr();
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
+        SirajsDog.bark();
         ChrisCat.purr();
+
+        //Sam Work begin
+        Owner samG = new Owner();
+        samG.name = "Sam G";
+        Cat samGcat = new Cat();
+        samGcat.size = "Large";
+        samGcat.color = "orange and white";
+        samGcat.fur = "soft";
+        samGcat.age = 4;
+        samGcat.hasClaws = true;
+        samGcat.energy = 9;
+        samGcat.name = "Pickles";
+        samGcat.describeSelf();
+
+        Panda samGpanda = new Panda();
+        samGpanda.species = "panda";
+        samGpanda.size = "small";
+        samGpanda.height = "short";
+        samGpanda.color = "black and white";
+        samGpanda.fur = "soft";
+        samGpanda.age = 2;
+        samGpanda.energy = 2;
+        samGpanda.name = "Kikkoman";
+        samGpanda.describeSelf();
+
+
         dinajdasCat.rollUpAndSleep();
-        owensMonkey.WOOP();
-        ChrisCat.kneadOn("blanket");
-        ChrisCat.eat();
-        ChrisFrog.croak();
-        ChrisFrog.eat();
-        ChrisFrog.leap();
-        Chris.feed(ChrisCat);
-        owensMonkey.WOOP();
+
+        System.out.println();
+        System.out.println("Let's introduce all of the Pet Sitters:");
+        james.describeSelf();
+
+        System.out.println();
+        System.out.println("Now the Pet Sitters are going to do their job:");
+        james.walk(rileysSnake);
     }
 }
