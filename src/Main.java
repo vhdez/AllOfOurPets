@@ -70,7 +70,7 @@ public class Main {
         ChrisCat.describeSelf();
 
         Cat owensCat = new Cat();
-        owensCat.size = "smalled";
+        owensCat.size = "small";
         owensCat.color = "white";
         owensCat.fur = "soft";
         owensCat.age = 1;
@@ -78,6 +78,27 @@ public class Main {
         owensCat.energy = 5;
         owensCat.name = "Snow";
         owensCat.describeSelf();
+
+        Cat ElijahsCat = new Cat();
+        ElijahsCat.size = "medium";
+        ElijahsCat.color = "grey";
+        ElijahsCat.fur = "soft";
+        ElijahsCat.age = 2;
+        ElijahsCat.hasClaws = true;
+        ElijahsCat.energy = 6;
+        ElijahsCat.name = "Atticus";
+        ElijahsCat.describeSelf();
+
+        Monkey owensMonkey = new Monkey();
+        owensMonkey.size = "small";
+        owensMonkey.color = "brown";
+        owensMonkey.fur = "soft";
+        owensMonkey.age = 2;
+        owensMonkey.energy = 5;
+        owensMonkey.name = "Monkey";
+        owensMonkey.describeSelf();
+
+
 
         Cat dinajdasCat = new Cat();
         dinajdasCat.size = "muscular";
@@ -94,14 +115,18 @@ public class Main {
         owen.cat1 = owensCat;
 
         Owner Gia = new Owner();
-        Gia.name = "Gia Jack";
+        Gia.name = "Gia";
         Gia.cat1 = GiasCat;
 
+       Owner Elijah = new Owner();
+       Elijah.name = "Elijah";
+       Elijah.cat1 = ElijahsCat;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
+        Gia.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
