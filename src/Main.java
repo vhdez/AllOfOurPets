@@ -148,7 +148,7 @@ public class Main {
         ElijahsFox.fur = "rough";
         ElijahsFox.age = 4;
         ElijahsFox.energy = 8;
-        ElijahsFox.name = "Goku";
+        ElijahsFox.name = "Meno";
         ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
