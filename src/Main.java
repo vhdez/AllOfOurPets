@@ -125,6 +125,8 @@ public class Main {
 
         Owner Gia = new Owner();
         Gia.name = "Gia";
+        Gia.foodAmount = 10;
+        Gia.patienceAmount = 50;
         Gia.cat1 = GiasCat;
 
        Owner Elijah = new Owner();
@@ -155,5 +157,7 @@ public class Main {
         owensCat.purr();
         ChrisCat.purr();
         dinajdasCat.rollUpAndSleep();
+        GiasCat.rollUpAndSleep();
+        GiasCat.eat();
     }
 }
