@@ -122,11 +122,18 @@ public class Main {
        Elijah.name = "Elijah";
        Elijah.cat1 = ElijahsCat;
 
+        Owner Dinajda = new Owner();
+        Dinajda.name = "Dinajda";
+        Dinajda.foodAmount = 12;
+        Dinajda.patienceAmount = 10;
+        Dinajda.cat1 = dinajdasCat;
+
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
         Gia.describeSelf();
+        Dinajda.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
