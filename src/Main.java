@@ -161,6 +161,8 @@ public class Main {
 
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
+       Elijah.foodAmount = 20;
+       Elijah.patienceAmount = 13;
        Elijah.cat1 = ElijahsCat;
 
         Owner Dinajda = new Owner();
