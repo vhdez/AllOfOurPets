@@ -123,7 +123,14 @@ public class Main {
         owensMonkey.name = "Monkey";
         owensMonkey.describeSelf();
 
-
+       Fox ElijahsFox = new Fox();
+        ElijahsFox.size = "small";
+        ElijahsFox.color = "red";
+        ElijahsFox.fur = "rough";
+        ElijahsFox.age = 4;
+        ElijahsFox.energy = 8;
+        ElijahsFox.name = "Goku";
+        ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
         dinajdasCat.size = "muscular";
