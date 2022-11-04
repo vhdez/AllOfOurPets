@@ -197,6 +197,8 @@ Main {
 
         Owner PhillyBoySam = new Owner ();
         PhillyBoySam.name = "pbs";
+        PhillyBoySam.foodAmount = 15;
+        PhillyBoySam.patienceAmount = 12;
         PhillyBoySam.dog1  = PhillyBoySamDog;
 
         System.out.println();
