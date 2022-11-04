@@ -32,11 +32,20 @@ public class Main {
         rileysCat.name = "Charles";
         rileysCat.describeSelf();
 
+        Snake rileysSnake = new Snake();
+        rileysSnake.size = "Long";
+        rileysSnake.color = "green";
+        rileysSnake.age = 3;
+        rileysSnake.energy = 1;
+        rileysSnake.name = "Greenbean";
+        rileysSnake.describeSelf();
+
         Owner riley = new Owner();
-        riley.name = "rileyp";
+        riley.name = "riley";
         riley.foodAmount = 10;
         riley.patienceAmount = 20;
         riley.cat1 = rileysCat;
+        riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
 
         Cat mrHsCat = new Cat();
@@ -116,6 +125,7 @@ public class Main {
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
+        riley.describeSelf();
         Gia.describeSelf();
 
         System.out.println();
@@ -125,6 +135,9 @@ public class Main {
         samsDog.eat();
         rileysDog.bark();
         rileysCat.kneadOn("hoodie");
+        rileysSnake.rollUpAndSleep();
+        rileysSnake.eat();
+        rileysSnake.play();
         mrHsCat.purr();
         GiasCat.purr();
         GiasCat.kneadOn("Blanket");
