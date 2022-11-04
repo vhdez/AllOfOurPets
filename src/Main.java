@@ -79,6 +79,16 @@ public class Main {
         owensCat.name = "Snow";
         owensCat.describeSelf();
 
+        Cat ElijahsCat = new Cat();
+        ElijahsCat.size = "medium";
+        ElijahsCat.color = "grey";
+        ElijahsCat.fur = "soft";
+        ElijahsCat.age = 2;
+        ElijahsCat.hasClaws = true;
+        ElijahsCat.energy = 6;
+        ElijahsCat.name = "Atticus";
+        ElijahsCat.describeSelf();
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -86,6 +96,10 @@ public class Main {
         Owner Gia = new Owner();
         Gia.name = "Gia Jack";
         Gia.cat1 = GiasCat;
+
+        Owner Elijah = new Owner();
+        Elijah.name = "Elijah";
+        Elijah.cat1 = ElijahsCat;
 
 
         System.out.println();
