@@ -30,6 +30,10 @@ public class Cat {
             System.out.println(name + " kneaded on someone's " + what);
         }
     }
+    void walk() {
+        energy = energy - 1;
+        System.out.println("Yay!, I'm going on a walk. Now " + name + "'s energy is at " + energy);
+    }
 
     void purr() {
         System.out.println(name + " purrs hello.");
