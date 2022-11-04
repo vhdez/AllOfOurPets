@@ -68,7 +68,7 @@ public class Main {
         GiasCat.name = "Joey";
         GiasCat.describeSelf();
 
-
+//Chris' cat, frog, and owner
         Cat ChrisCat = new Cat();
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
@@ -210,6 +210,7 @@ public class Main {
         GiasCat.rollUpAndSleep();
         GiasCat.eat();
         owensMonkey.bark();
+        //Chris' pets actions
         ChrisCat.kneadOn("blanket");
         ChrisCat.eat();
         ChrisFrog.croak();
