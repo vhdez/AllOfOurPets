@@ -148,6 +148,7 @@ public class Main {
         rileysSnake.rollUpAndSleep();
         rileysSnake.eat();
         rileysSnake.play();
+
         mrHsCat.purr();
         GiasCat.purr();
         GiasCat.kneadOn("Blanket");
