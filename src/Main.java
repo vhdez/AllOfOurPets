@@ -260,8 +260,6 @@ Main {
         GiasParrot.name = "Polly";
         GiasParrot.describeSelf();
 
-
-
         dinajdasCat.rollUpAndSleep();
         GiasCat.rollUpAndSleep();
         GiasCat.eat();
