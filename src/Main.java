@@ -70,7 +70,7 @@ public class Main {
         ChrisCat.describeSelf();
 
         Cat owensCat = new Cat();
-        owensCat.size = "smalled";
+        owensCat.size = "small";
         owensCat.color = "white";
         owensCat.fur = "soft";
         owensCat.age = 1;
@@ -89,6 +89,17 @@ public class Main {
         ElijahsCat.name = "Atticus";
         ElijahsCat.describeSelf();
 
+        Monkey owensMonkey = new Monkey();
+        owensMonkey.size = "small";
+        owensMonkey.color = "brown";
+        owensMonkey.fur = "soft";
+        owensMonkey.age = 2;
+        owensMonkey.energy = 5;
+        owensMonkey.name = "Monkey";
+        owensMonkey.describeSelf();
+
+
+
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.cat1 = owensCat;
@@ -96,10 +107,6 @@ public class Main {
         Owner Gia = new Owner();
         Gia.name = "Gia Jack";
         Gia.cat1 = GiasCat;
-
-        Owner Elijah = new Owner();
-        Elijah.name = "Elijah";
-        Elijah.cat1 = ElijahsCat;
 
 
         System.out.println();
