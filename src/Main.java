@@ -59,6 +59,7 @@ public class Main {
         GiasCat.name = "Joey";
         GiasCat.describeSelf();
 
+
         Cat ChrisCat = new Cat();
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
@@ -68,6 +69,12 @@ public class Main {
         ChrisCat.energy = 7;
         ChrisCat.name = "Fifi";
         ChrisCat.describeSelf();
+
+        Owner Chris = new Owner();
+        Chris.name = "Chris";
+        Chris.cat1 = ChrisCat;
+        int foodAmount = 10;
+        int patienceAmount = 5;
 
         Cat owensCat = new Cat();
         owensCat.size = "smalled";
@@ -92,6 +99,7 @@ public class Main {
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
         owen.describeSelf();
+        Chris.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
@@ -105,5 +113,7 @@ public class Main {
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+        ChrisCat.kneadOn("blanket");
+        ChrisCat.eat();
     }
 }
