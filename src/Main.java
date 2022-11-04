@@ -212,5 +212,6 @@ public class Main {
         ChrisFrog.eat();
         ChrisFrog.leap();
         Chris.feed(ChrisCat);
+        dinajdasCat.eat();
     }
 }
