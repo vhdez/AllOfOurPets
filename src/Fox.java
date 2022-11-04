@@ -1,4 +1,4 @@
-public class Cat {
+public class Fox {
     // Fields
     String size;
     String color;
@@ -11,7 +11,7 @@ public class Cat {
 
     // Methods
     void describeSelf() {
-        System.out.println("Meow!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " cat with " + fur + " fur.");
+        System.out.println("ringdingdring!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " fox with " + fur + " fur.");
     }
 
     void clean() {
@@ -23,20 +23,16 @@ public class Cat {
         System.out.println(name + " rolled-up and slept.");
     }
 
-    void kneadOn(String what) {
+    void biteOn(String what) {
         if (owner != null) {
-            System.out.println(name + " kneaded on " + owner.name + "'s " + what);
+            System.out.println(name + " bite on " + owner.name + "'s " + what);
         } else {
-            System.out.println(name + " kneaded on someone's " + what);
+            System.out.println(name + " bite's on someone's " + what);
         }
     }
-    void walk() {
-        energy = energy - 1;
-        System.out.println("Yay!, I'm going on a walk. Now " + name + "'s energy is at " + energy);
-    }
 
-    void purr() {
-        System.out.println(name + " purrs hello.");
+    void laughs() {
+        System.out.println(name + " laughs hello.");
     }
 
     void eat() {
