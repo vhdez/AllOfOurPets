@@ -108,6 +108,9 @@ public class Main {
         Gia.name = "Gia Jack";
         Gia.cat1 = GiasCat;
 
+       Owner Elijah = new Owner();
+       Elijah.name = "Elijah";
+       Elijah.cat1 = ElijahsCat;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
