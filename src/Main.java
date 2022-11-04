@@ -137,9 +137,6 @@ public class Main {
         owensMonkey.size = "small";
         owensMonkey.color = "brown";
         owensMonkey.fur = "soft";
-        owensMonkey.benchWeight = 1000;
-        owensMonkey.tail = "long";
-        owensMonkey.bodyFat = 1;
         owensMonkey.age = 2;
         owensMonkey.energy = 5;
         owensMonkey.name = "Monkey";
@@ -151,7 +148,7 @@ public class Main {
         ElijahsFox.fur = "rough";
         ElijahsFox.age = 4;
         ElijahsFox.energy = 8;
-        ElijahsFox.name = "Goku";
+        ElijahsFox.name = "Mena";
         ElijahsFox.describeSelf();
 
         Cat dinajdasCat = new Cat();
@@ -169,7 +166,9 @@ public class Main {
         owen.cat1 = owensCat;
 
         Owner Gia = new Owner();
-        Gia.name = "Gia Jack";
+        Gia.name = "Gia";
+        Gia.foodAmount = 17;
+        Gia.patienceAmount = 52;
         Gia.cat1 = GiasCat;
 
        Owner Elijah = new Owner();
@@ -183,6 +182,12 @@ public class Main {
         Dinajda.foodAmount = 12;
         Dinajda.patienceAmount = 10;
         Dinajda.cat1 = dinajdasCat;
+
+        Owner PhillyBoySam = new Owner ();
+        PhillyBoySam.name = "pbs";
+        PhillyBoySam.foodAmount = 15;
+        PhillyBoySam.patienceAmount = 12;
+        PhillyBoySam.dog1  = PhillyBoySamDog;
 
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
@@ -241,8 +246,26 @@ public class Main {
         samGpanda.name = "Kikkoman";
         samGpanda.describeSelf();
 
+        Parrot GiasParrot = new Parrot();
+        GiasParrot.size = "small";
+        GiasParrot.color = "Blue Red and Yellow";
+        GiasParrot.age = 5;
+        GiasParrot.energy = 2;
+        GiasParrot.name = "Polly";
+        GiasParrot.describeSelf();
 
         dinajdasCat.rollUpAndSleep();
+        GiasCat.rollUpAndSleep();
+        GiasCat.eat();
+        owensMonkey.bark();
+        //Chris' pets actions
+        ChrisCat.kneadOn("blanket");
+        ChrisCat.eat();
+        ChrisFrog.croak();
+        ChrisFrog.eat();
+        ChrisFrog.leap();
+        Chris.feed(ChrisCat);
+        GiasParrot.talk();
 
         System.out.println();
         System.out.println("Let's introduce all of the Pet Sitters:");
