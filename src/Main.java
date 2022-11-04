@@ -116,6 +116,32 @@ public class Main {
         GiasCat.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
+
+        //Sam Work begin
+        Owner samG = new Owner();
+        samG.name = "Sam G";
+        Cat samGcat = new Cat();
+        samGcat.size = "Large";
+        samGcat.color = "orange and white";
+        samGcat.fur = "soft";
+        samGcat.age = 4;
+        samGcat.hasClaws = true;
+        samGcat.energy = 9;
+        samGcat.name = "Pickles";
+        samGcat.describeSelf();
+
+        Panda samGpanda = new Panda();
+        samGpanda.species = "panda";
+        samGpanda.size = "small";
+        samGpanda.height = "short";
+        samGpanda.color = "black and white";
+        samGpanda.fur = "soft";
+        samGpanda.age = 2;
+        samGpanda.energy = 2;
+        samGpanda.name = "Kikkoman";
+        samGpanda.describeSelf();
+
+
         owensMonkey.bark();
     }
 }
