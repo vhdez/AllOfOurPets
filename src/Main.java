@@ -72,6 +72,7 @@ public class Main {
         riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
 
+        // Gia's cat
         Cat GiasCat = new Cat();
         GiasCat.size = "Chunky";
         GiasCat.color = "Black and White";
@@ -180,6 +181,7 @@ public class Main {
         owen.name = "Owen";
         owen.allPetsOwned.add(owensCat);
 
+        //Gia as an Owner
         Owner Gia = new Owner();
         Gia.name = "Gia";
         Gia.foodAmount = 17;
@@ -256,6 +258,7 @@ public class Main {
         samGpanda.climb();
         samGpanda.sleep();
 
+        //Gia's Parrot
         Parrot GiasParrot = new Parrot();
         GiasParrot.size = "small";
         GiasParrot.color = "Blue Red and Yellow";
