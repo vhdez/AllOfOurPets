@@ -1,19 +1,25 @@
-public class Frog {
-    String size;
-    String color;
+public class Frog extends Pet {
+   //Fields
     String texture;
     String croakSound;
-    int age;
-    int fullness;
-    String name;
-    Owner owner;
 
+    //Constructors
+    public Frog(){
+    }
+
+    public Frog(String size, String color, int age, int energy, String name, String croakSound, String texture, Owner owner){
+        super(size, color, age, energy, name, owner);
+        this.texture = texture;
+        this.croakSound = croakSound;
+    }
+
+    //Methods
     void describeSelf() {
         System.out.println("Ribbit!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " frog with a" + croakSound + " croak.");
     }
     void eat() {
-        fullness = fullness + 1;
-        System.out.println("Yum, now " + name + "'s fullness is at " + fullness );
+        energy = energy + 1;
+        System.out.println("Yum, now " + name + "'s fullness is at " + energy );
     }
     void croak() {
         System.out.println(name + " crooooooaks a hello.");
