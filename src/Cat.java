@@ -1,13 +1,17 @@
-public class Cat {
+public class Cat extends Pet {
     // Fields
-    String size;
-    String color;
     String fur;
-    int age;
     boolean hasClaws;
-    int energy;
-    String name;
-    Owner owner;
+
+    // Constructors
+    public Cat() {
+    }
+
+    public Cat(String size, String color, int age, int energy, String name, Owner owner, String fur, boolean hasClaws) {
+        super(size, color, age, energy, name, owner);
+        this.fur = fur;
+        this.hasClaws = hasClaws;
+    }
 
     // Methods
     void describeSelf() {
@@ -31,16 +35,11 @@ public class Cat {
         }
     }
     void walk() {
-        energy = energy - 1;
-        System.out.println("Yay!, I'm going on a walk. Now " + name + "'s energy is at " + energy);
+        System.out.println("No way! " + name + " won't be walked.");
     }
 
     void purr() {
         System.out.println(name + " purrs hello.");
     }
 
-    void eat() {
-        energy = energy + 1;
-        System.out.println("Yum, now " + name + "'s energy is at " + energy);
-    }
 }

@@ -1,33 +1,37 @@
-public class Owner {
-    String name;
-    Dog dog1;
-    Dog dog2;
-    Cat cat1;
-    Cat cat2;
-    Snake snake1;
+import java.util.ArrayList;
 
-    Panda panda1;
-    Frog frog1;
+public class Owner {
+    // fields
+    String name;
     int foodAmount;
     int patienceAmount;
+    ArrayList<Pet> allPetsOwned;
+    Snake snake1;
+    Panda panda1;
+    Frog frog1;
 
-    void feed(Dog dog) {
-        if (foodAmount > 0) {
-            foodAmount = foodAmount - 1;
-            dog.eat();
-            System.out.println(name + " just fed " + dog.name);
-        } else {
-            System.out.println(name + " CANNOT feed " + dog.name);
-        }
+    // constructors
+    public Owner() {
+        this.allPetsOwned = new ArrayList<>();
     }
 
-    void feed(Cat cat) {
-        if (foodAmount > 0) {
-            foodAmount = foodAmount - 1;
-            cat.eat();
-            System.out.println(name + " just fed " + cat.name);
-        } else {
-            System.out.println(name + " CANNOT feed " + cat.name);
+    public Owner(String name, int foodAmount, int patienceAmount) {
+        this.allPetsOwned = new ArrayList<>();
+        this.name = name;
+        this.foodAmount = foodAmount;
+        this.patienceAmount = patienceAmount;
+    }
+
+    // methods
+    void feed() {
+        for (Pet pet: allPetsOwned) {
+            if (foodAmount > 0) {
+                foodAmount = foodAmount - 1;
+                pet.eat();
+                System.out.println(name + " just fed " + pet.name);
+            } else {
+                System.out.println(name + " CANNOT feed " + pet.name);
+            }
         }
     }
 
@@ -42,17 +46,8 @@ public class Owner {
 
     void describeSelf() {
         System.out.println("Owner " + name + " has " + foodAmount + " pieces of food and " + patienceAmount + " remaining patience.");
-        if (dog1 != null ) {
-            System.out.println("Owner " + name + " owns " + dog1.name);
-        }
-        if (dog2 != null ) {
-            System.out.println("Owner " + name + " owns " + dog2.name);
-        }
-        if (cat1 != null ) {
-            System.out.println("Owner " + name + " owns " + cat1.name);
-        }
-        if (cat2 != null ) {
-            System.out.println("Owner " + name + " owns " + cat2.name);
+        for (Pet pet: allPetsOwned) {
+            System.out.println("Owner " + name + " owns " + pet.name);
         }
         if (snake1 != null ) {
             System.out.println("Owner " + name + " owns " + snake1.name);
