@@ -166,7 +166,7 @@ public class Main {
         PhillyBoySamDog.name = "Widow";
         PhillyBoySamDog.describeSelf();
 
-        capybara dinajdasCapy = new capybara();
+        capybara dinajdasCapy = new capybara("chunky", "brown", 2, 3, "Capy", "", "short", true);
         dinajdasCapy.size = "chunky";
         dinajdasCapy.color = "brown";
         dinajdasCapy.fur = "short";

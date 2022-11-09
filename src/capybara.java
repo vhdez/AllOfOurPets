@@ -1,12 +1,15 @@
-public class capybara {
-    String size;
-    String color;
+public class capybara extends Pet{
     String fur;
-    int age;
     boolean hasClaws;
-    int energy;
-    String name;
-    Owner owner;
+
+    public capybara(){
+    }
+
+    public capybara(String size, String color, int age, int energy, String name, Owner owner, String fur, boolean hasClaws) {
+        super(size, color, age, energy, name, owner);
+        this.fur = fur;
+        this.hasClaws = hasClaws;
+    }
 
     void describeSelf() {
         System.out.println("Squeak!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " capybara with " + fur + " fur.");
