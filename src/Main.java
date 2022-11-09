@@ -6,6 +6,8 @@ public class Main {
         ArrayList<Owner> allOwners = new ArrayList<>();
         allOwners.add(new Owner("Mr. Hernandez", 10, 5));
         allOwners.add(new Owner("Mr. Latimer", 8,2));
+        Owner samG = new Owner("Sam G",9, 7);
+        allOwners.add(samG);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -19,6 +21,8 @@ public class Main {
         Cat garfield = new Cat("fat", "orange", 35, 2, "Garfield", mrH, "soft", false);
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
+
+        allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -205,7 +209,6 @@ public class Main {
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
-        Owner samG = new Owner();
         owen.describeSelf();
         Chris.describeSelf();
         riley.describeSelf();
