@@ -50,6 +50,17 @@ public class Main {
         ((Dog)allPets.get(0)).bark();
         System.out.println();
 
+        Dog SirajsDog = new Dog();
+        SirajsDog.size = "small";
+        SirajsDog.color = "grey and white";
+        SirajsDog.fur = "fluffy";
+        SirajsDog.age = 4;
+        SirajsDog.limbs = "arms and legs";
+        SirajsDog.energy = 10;
+        SirajsDog.name = "Smokey";
+        SirajsDog.describeSelf();
+
+
         Cat rileysCat = new Cat();
         rileysCat.size = "Chubby";
         rileysCat.color = "orange and white";
