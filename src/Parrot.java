@@ -23,4 +23,7 @@ public class Parrot extends Pet{
     void talk(){
         System.out.println( name  + " wants a cracker ");
     }
+    void Mimic (){System.out.println( "(Gia says I love you) and " + name + " says I love you "); }
 }
+
+
