@@ -1,16 +1,15 @@
-public class Parrot {
+public class Parrot extends Pet{
     //fields
-    String color;
+    String Mimic;
+    boolean Fly;
 
-    String size;
-
-    int age;
-
-    int energy;
-
-    String name;
-
-    Owner owner;
+    public Parrot() {
+    }
+    public Parrot(String size, String color, int age, int energy, String name, Owner owner, String Mimic, boolean Fly) {
+        super(size, color, age, energy, name, owner);
+        this.Mimic = Mimic;
+        this.Fly = Fly;
+    }
 
     void describeSelf() {
         System.out.println("Squawk!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " parrot");
