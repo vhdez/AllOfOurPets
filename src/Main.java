@@ -9,6 +9,7 @@ public class Main {
         Owner samG = new Owner("Sam G",9, 7);
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
+        allOwners.add(new Owner("Gia", 8,2));
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -24,6 +25,11 @@ public class Main {
         mrH.allPetsOwned.add(garfield);
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
+
+        Owner Gia = allOwners.get (3);
+        Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
+        allPets.add(Joey);
+        Gia.allPetsOwned.add(Joey);
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -205,7 +211,6 @@ public class Main {
         owen.allPetsOwned.add(owensCat);
 
         //Gia as an Owner
-        Owner Gia = new Owner();
         Gia.name = "Gia";
         Gia.foodAmount = 17;
         Gia.patienceAmount = 52;
