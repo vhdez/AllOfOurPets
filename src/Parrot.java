@@ -1,11 +1,11 @@
 public class Parrot extends Pet{
     //fields
     String Mimic;
-    String Fly;
+    boolean Fly;
 
     public Parrot() {
     }
-    public Parrot(String size, String color, int age, int energy, String name, Owner owner, String fur, String limbs, String Mimic, String Fly) {
+    public Parrot(String size, String color, int age, int energy, String name, Owner owner, String Mimic, boolean Fly) {
         super(size, color, age, energy, name, owner);
         this.Mimic = Mimic;
         this.Fly = Fly;
