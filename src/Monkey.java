@@ -1,27 +1,30 @@
-public class Monkey {
+public class Monkey extends Pet {
     // Fields
-    String size;
-
-    String color;
-
     String fur;
+    int benchWeight;
 
-    int age;
+    int bodyFat;
 
-    int energy;
+    String tail;
 
-    String limbs;
+    public Monkey(){
+    }
 
-    String name;
+    public Monkey(String size, String color, int age, int energy, String name, Owner owner, String fur, int benchWeight, int bodyFat, String tail) {
+        super(size, color, age, energy, name, owner);
+        this.fur = fur;
+        this.benchWeight = benchWeight;
+        this.bodyFat = bodyFat;
+        this.tail = tail;
+    }
 
-    Owner owner;
 
     // Methods
     void describeSelf() {
-        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " dog with " + fur + " fur.");
+        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " monkey with " + fur + " fur and my tail is " + tail+ " . I can bench " + benchWeight + "kg and my body fat percentage is " + bodyFat + ".");
     }
 
-    void bark() {
+    void WOOP() {
         System.out.println(name + " says: WOO!");
         if (owner != null) {
             owner.patienceAmount = owner.patienceAmount - 1;

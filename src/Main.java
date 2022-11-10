@@ -6,6 +6,8 @@ public class Main {
         ArrayList<Owner> allOwners = new ArrayList<>();
         allOwners.add(new Owner("Mr. Hernandez", 10, 5));
         allOwners.add(new Owner("Mr. Latimer", 8,2));
+        Owner owen = new Owner("Owen", 10, 10);
+        allOwners.add(owen);
         Owner samG = new Owner("Sam G",9, 7);
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
@@ -46,6 +48,15 @@ public class Main {
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
+        Monkey owensMonkey = new Monkey("small", "brown", 17, 10, "Monkey", owen, "Soft", 1000, 1, "long");
+        allPets.add(owensMonkey);
+        owen.allPetsOwned.add(owensMonkey);
+
+        Cat owensCat = new Cat("small", "white", 1, 10, "Snow",  owen, "Soft", false);
+        allPets.add(owensCat);
+        owen.allPetsOwned.add(owensCat);
+
+
         Owner Gia = allOwners.get (3);
         Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
         allPets.add(Joey);
@@ -72,7 +83,7 @@ public class Main {
         }
 
         System.out.println();
-        System.out.println("Let's see what our PETS and OWNERS ca do:");
+        System.out.println("Let's see what our PETS and OWNERS can do:");
         // get all pets to do their unique walking
         for (Pet pet: allPets) {
             pet.walk();
@@ -80,7 +91,9 @@ public class Main {
         // get all  owners to feed their pets
         allOwners.get(0).feed();
         allOwners.get(1).feed();
-        allOwners.get(2).feed();
+        owen.feed();
+        owensCat.purr();
+        allOwners.get(5).feed();
         // get a cat to do cat-only method
         ((Cat)allPets.get(1)).purr();
         // get a dog to do dog-only method
@@ -135,16 +148,6 @@ public class Main {
         Chris.frog1 = Frogston;
         Chris.sibling1 = ChrisSibling;
 
-        Cat owensCat = new Cat();
-        owensCat.size = "small";
-        owensCat.color = "white";
-        owensCat.fur = "soft";
-        owensCat.age = 1;
-        owensCat.hasClaws = false;
-        owensCat.energy = 5;
-        owensCat.name = "Snow";
-        owensCat.describeSelf();
-
         Cat ElijahsCat = new Cat();
         ElijahsCat.size = "medium";
         ElijahsCat.color = "grey";
@@ -154,15 +157,6 @@ public class Main {
         ElijahsCat.energy = 6;
         ElijahsCat.name = "Atticus";
         ElijahsCat.describeSelf();
-
-        Monkey owensMonkey = new Monkey();
-        owensMonkey.size = "small";
-        owensMonkey.color = "brown";
-        owensMonkey.fur = "soft";
-        owensMonkey.age = 2;
-        owensMonkey.energy = 5;
-        owensMonkey.name = "Monkey";
-        owensMonkey.describeSelf();
 
        Fox ElijahsFox = new Fox();
         ElijahsFox.size = "small";
@@ -184,10 +178,6 @@ public class Main {
         PhillyBoySamDog.name = "Widow";
         PhillyBoySamDog.describeSelf();
 
-        Owner owen = new Owner();
-        owen.name = "Owen";
-        owen.allPetsOwned.add(owensCat);
-
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
        Elijah.allPetsOwned.add(ElijahsCat);
@@ -201,7 +191,6 @@ public class Main {
         System.out.println();
         System.out.println("Let's introduce all of the owners:");
         // Students: construct some owners here
-        owen.describeSelf();
         Chris.describeSelf();
         riley.describeSelf();
         Gia.describeSelf();
@@ -217,7 +206,6 @@ public class Main {
 
         Joey.purr();
         Joey.kneadOn("Blanket");
-        owensCat.purr();
         Fifi.purr();
 
         //Sam Work begin
@@ -236,7 +224,6 @@ public class Main {
         Loki.rollUpAndSleep();
         Joey.rollUpAndSleep();
         Joey.eat();
-        owensMonkey.bark();
         //Chris' pets' (and sibling's) actions
         Fifi.kneadOn("blanket");
         Fifi.eat();
@@ -244,6 +231,16 @@ public class Main {
         Frogston.eat();
         Frogston.leap();
         Chris.feed();
+        GiasParrot.talk();
+
+        System.out.println(" ");
+        System.out.println("Let's introduce all of our Petsitters:");
+        MonkeySitter owenMonkeySitter = new MonkeySitter();
+        owenMonkeySitter.age = 17;
+        owenMonkeySitter.location = "Philly";
+        owenMonkeySitter.name = "Owen";
+        owenMonkeySitter.sitMonkey();
+
         ChrisSibling.wave();
         ChrisSibling.pet();
         GiasParrot.talk();
