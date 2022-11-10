@@ -3,12 +3,19 @@ import java.util.ArrayList;
 public class Owner {
     // fields
     String name;
+    Dog dog1;
+    Dog dog2;
+    Cat cat1;
+    Cat cat2;
+    Snake snake1;
+    Frog frog1;
+    Sibling sibling1;
     int foodAmount;
     int patienceAmount;
     ArrayList<Pet> allPetsOwned;
-    Snake snake1;
+
     Panda panda1;
-    Frog frog1;
+
 
     // constructors
     public Owner() {
