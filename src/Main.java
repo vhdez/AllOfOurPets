@@ -10,6 +10,7 @@ public class Main {
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
         allOwners.add(new Owner("Gia", 8,2));
+        allOwners.add(Chris);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -106,7 +107,7 @@ public class Main {
         GiasCat.describeSelf();
 
 //Chris' cat, frog, sibling, and owner
-        Cat ChrisCat = new Cat();
+        Cat ChrisCat = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
         ChrisCat.fur = "soft";
@@ -308,7 +309,7 @@ public class Main {
         ChrisFrog.croak();
         ChrisFrog.eat();
         ChrisFrog.leap();
-        Chris.feed(ChrisCat);
+        Chris.feed();
         ChrisSibling.wave();
         ChrisSibling.pet();
         GiasParrot.talk();
