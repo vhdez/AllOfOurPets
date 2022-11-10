@@ -109,16 +109,6 @@ public class Main {
         riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
 
-        // Gia's cat
-        Cat GiasCat = new Cat();
-        GiasCat.size = "Chunky";
-        GiasCat.color = "Black and White";
-        GiasCat.fur = "Fluffy";
-        GiasCat.age = 2;
-        GiasCat.hasClaws = true;
-        GiasCat.energy = 10;
-        GiasCat.name = "Joey";
-        GiasCat.describeSelf();
 
 //Chris' cat, frog, sibling, and owner
         Cat ChrisCat = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
@@ -243,8 +233,8 @@ public class Main {
         rileysSnake.eat();
         rileysSnake.play();
 
-        GiasCat.purr();
-        GiasCat.kneadOn("Blanket");
+        Joey.purr();
+        Joey.kneadOn("Blanket");
         owensCat.purr();
         ChrisCat.purr();
 
@@ -292,8 +282,8 @@ public class Main {
         samG.name = "Sam G";
 
         dinajdasCat.rollUpAndSleep();
-        GiasCat.rollUpAndSleep();
-        GiasCat.eat();
+        Joey.rollUpAndSleep();
+        Joey.eat();
         owensMonkey.bark();
         //Chris' pets' (and sibling's) actions
         ChrisCat.kneadOn("blanket");
