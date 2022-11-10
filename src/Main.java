@@ -10,8 +10,7 @@ public class Main {
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
         allOwners.add(new Owner("Gia", 17,52));
-        Owner Dinajda = new Owner("Dinajda", 12, 10);
-        allOwners.add(Dinajda);
+        allOwners.add(new Owner("Dinajda", 12, 10));
         allOwners.add(new Owner("Gia", 8,2));
         allOwners.add(Chris);
 
@@ -35,10 +34,14 @@ public class Main {
         allPets.add(samGpanda);
         samG.allPetsOwned.add(samGpanda);
 
-        Dinajda = allOwners.get(2);
+        Owner Dinajda = allOwners.get(4);
         capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
         allPets.add(Capy);
         Dinajda.allPetsOwned.add(Capy);
+
+        Cat Loki = new Cat("muscular", "grey tabby", 3, 7, "Loki", Dinajda, "smooth", true);
+        allPets.add(Loki);
+        Dinajda.allPetsOwned.add(Loki);
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
@@ -55,7 +58,6 @@ public class Main {
         Parrot Polly = new Parrot ("small", "Blue, Red and Yellow", 5, 2, "Polly", Gia,"Polly want a cracker",true );
         allPets.add(Polly);
         Gia.allPetsOwned.add(Polly);
-
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -83,6 +85,18 @@ public class Main {
         // get a dog to do dog-only method
         ((Dog)allPets.get(0)).bark();
         System.out.println();
+
+
+        Dog SirajsDog = new Dog();
+        SirajsDog.size = "small";
+        SirajsDog.color = "grey and white";
+        SirajsDog.fur = "fluffy";
+        SirajsDog.age = 4;
+        SirajsDog.limbs = "arms and legs";
+        SirajsDog.energy = 10;
+        SirajsDog.name = "Smokey";
+        SirajsDog.describeSelf();
+
 
         Cat rileysCat = new Cat();
         rileysCat.size = "Chubby";
@@ -160,15 +174,6 @@ public class Main {
         ElijahsFox.name = "Goku";
         ElijahsFox.describeSelf();
 
-        Cat dinajdasCat = new Cat();
-        dinajdasCat.size = "muscular";
-        dinajdasCat.color = "grey tabby";
-        dinajdasCat.fur = "smooth";
-        dinajdasCat.age = 3;
-        dinajdasCat.hasClaws = true;
-        dinajdasCat.energy = 7;
-        dinajdasCat.name = "Loki";
-        dinajdasCat.describeSelf();
 
         Dog PhillyBoySamDog = new Dog();
         PhillyBoySamDog.size = "medium";
@@ -229,7 +234,7 @@ public class Main {
 
 
 
-        dinajdasCat.rollUpAndSleep();
+        Loki.rollUpAndSleep();
         Joey.rollUpAndSleep();
         Joey.eat();
         owensMonkey.bark();
@@ -258,13 +263,17 @@ public class Main {
         System.out.println();
         System.out.println("Now the Pet Sitters are going to do their job:");
         james.walk(rileysSnake);
-        dinajdasCat.eat();
+        Loki.eat();
         samGpanda.eat();
         samGpanda.climb();
         samGpanda.sleep();
 
+        Loki.eat();
+        Chris.feed();
+        Loki.eat();
         Capy.sleep();
         Capy.eat();
         Polly.Mimic();
+
     }
 }
