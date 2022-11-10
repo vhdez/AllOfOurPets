@@ -197,16 +197,6 @@ public class Main {
         PhillyBoySamDog.name = "Widow";
         PhillyBoySamDog.describeSelf();
 
-        capybara dinajdasCapy = new capybara("chunky", "brown", 2, 3, "Capy", "", "short", true);
-        dinajdasCapy.size = "chunky";
-        dinajdasCapy.color = "brown";
-        dinajdasCapy.fur = "short";
-        dinajdasCapy.age = 2;
-        dinajdasCapy.hasClaws = false;
-        dinajdasCapy.energy = 3;
-        dinajdasCapy.name = "Capy";
-        dinajdasCapy.describeSelf();
-
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.allPetsOwned.add(owensCat);
@@ -221,12 +211,6 @@ public class Main {
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
        Elijah.allPetsOwned.add(ElijahsCat);
-
-        Owner Dinajda = new Owner();
-        Dinajda.name = "Dinajda";
-        Dinajda.foodAmount = 12;
-        Dinajda.patienceAmount = 10;
-        Dinajda.allPetsOwned.add(dinajdasCat);
 
         Owner PhillyBoySam = new Owner ();
         PhillyBoySam.name = "pbs";
@@ -324,7 +308,7 @@ public class Main {
         james.walk(rileysSnake);
         Chris.feed();
         dinajdasCat.eat();
-        dinajdasCapy.describeSelf();
-        dinajdasCapy.sleep();
+        Capy.sleep();
+        Capy.eat();
     }
 }
