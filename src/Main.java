@@ -76,7 +76,6 @@ public class Main {
         ((Dog)allPets.get(0)).bark();
         System.out.println();
 
-
         Dog SirajsDog = new Dog();
         SirajsDog.size = "small";
         SirajsDog.color = "grey and white";
