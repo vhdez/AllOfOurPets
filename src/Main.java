@@ -11,6 +11,8 @@ public class Main {
         allOwners.add(samG);
         Owner Dinajda = new Owner("Dinajda", 12, 10);
         allOwners.add(Dinajda);
+        allOwners.add(new Owner("Gia", 8,2));
+        allOwners.add(Chris);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -31,6 +33,11 @@ public class Main {
         Dinajda.allPetsOwned.add(Capy);
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
+
+        Owner Gia = allOwners.get (3);
+        Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
+        allPets.add(Joey);
+        Gia.allPetsOwned.add(Joey);
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -107,7 +114,7 @@ public class Main {
         GiasCat.describeSelf();
 
 //Chris' cat, frog, sibling, and owner
-        Cat ChrisCat = new Cat();
+        Cat ChrisCat = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
         ChrisCat.size = "medium";
         ChrisCat.color = "black";
         ChrisCat.fur = "soft";
@@ -202,7 +209,6 @@ public class Main {
         owen.allPetsOwned.add(owensCat);
 
         //Gia as an Owner
-        Owner Gia = new Owner();
         Gia.name = "Gia";
         Gia.foodAmount = 17;
         Gia.patienceAmount = 52;
@@ -294,7 +300,7 @@ public class Main {
         ChrisFrog.croak();
         ChrisFrog.eat();
         ChrisFrog.leap();
-        Chris.feed(ChrisCat);
+        Chris.feed();
         ChrisSibling.wave();
         ChrisSibling.pet();
         GiasParrot.talk();
