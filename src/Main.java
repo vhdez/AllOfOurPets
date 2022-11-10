@@ -25,6 +25,10 @@ public class Main {
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
 
+        Dinajda = allOwners.get(2);
+        capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
+        allPets.add(Capy);
+        Dinajda.allPetsOwned.add(Capy);
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
