@@ -8,7 +8,8 @@ public class Main {
         allOwners.add(new Owner("Mr. Latimer", 8,2));
         Owner samG = new Owner("Sam G",9, 7);
         allOwners.add(samG);
-        allOwners.add(new Owner("Dinajda", 12, 10));
+        Owner Dinajda = new Owner("Dinajda", 12, 10);
+        allOwners.add(Dinajda);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -23,10 +24,6 @@ public class Main {
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
 
-        Owner Dinajda = allOwners.get(2);
-        capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", "", "short", true);
-        allPets.add(Capy);
-        Dinajda.allPetsOwned.add(Capy);
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
