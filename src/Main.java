@@ -58,6 +58,7 @@ public class Main {
         ((Dog)allPets.get(0)).bark();
         System.out.println();
 
+
         Dog SirajsDog = new Dog();
         SirajsDog.size = "small";
         SirajsDog.color = "grey and white";
@@ -313,6 +314,13 @@ public class Main {
         ChrisSibling.wave();
         ChrisSibling.pet();
         GiasParrot.talk();
+
+        Pet_Sitter james = new Pet_Sitter();
+        james.name = "James";
+        james.foodAmount = 20;
+        james.patienceAmount = 20;
+        james.cat1 = rileysCat;
+        james.snake1 = rileysSnake;
 
         System.out.println();
         System.out.println("Let's introduce all of the Pet Sitters:");
