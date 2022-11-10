@@ -82,7 +82,7 @@ public class Main {
         allOwners.get(1).feed();
         owen.feed();
         owensCat.purr();
-        allOwners.get(2).feed();
+        allOwners.get(5).feed();
         // get a cat to do cat-only method
         ((Cat)allPets.get(1)).purr();
         // get a dog to do dog-only method
@@ -176,23 +176,6 @@ public class Main {
         PhillyBoySamDog.limbs = "paws";
         PhillyBoySamDog.name = "Widow";
         PhillyBoySamDog.describeSelf();
-
-        capybara dinajdasCapy = new capybara();
-        dinajdasCapy.size = "chunky";
-        dinajdasCapy.color = "brown";
-        dinajdasCapy.fur = "short";
-        dinajdasCapy.age = 2;
-        dinajdasCapy.hasClaws = false;
-        dinajdasCapy.energy = 3;
-        dinajdasCapy.name = "Capy";
-        dinajdasCapy.describeSelf();
-
-        //Gia as an Owner
-        Owner Gia = new Owner();
-        Gia.name = "Gia";
-        Gia.foodAmount = 17;
-        Gia.patienceAmount = 52;
-        Gia.allPetsOwned.add(GiasCat);
 
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
