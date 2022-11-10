@@ -10,8 +10,7 @@ public class Main {
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
         allOwners.add(new Owner("Gia", 17,52));
-        Owner Dinajda = new Owner("Dinajda", 12, 10);
-        allOwners.add(Dinajda);
+        allOwners.add(new Owner("Dinajda", 12, 10));
         allOwners.add(new Owner("Gia", 8,2));
         allOwners.add(Chris);
 
@@ -28,10 +27,14 @@ public class Main {
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
 
-        Dinajda = allOwners.get(2);
+        Owner Dinajda = allOwners.get(4);
         capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
         allPets.add(Capy);
         Dinajda.allPetsOwned.add(Capy);
+
+        Cat Loki = new Cat("muscular", "grey tabby", 3, 7, "Loki", Dinajda, "smooth", true);
+        allPets.add(Loki);
+        Dinajda.allPetsOwned.add(Loki);
 
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
@@ -181,15 +184,6 @@ public class Main {
         ElijahsFox.name = "Goku";
         ElijahsFox.describeSelf();
 
-        Cat dinajdasCat = new Cat();
-        dinajdasCat.size = "muscular";
-        dinajdasCat.color = "grey tabby";
-        dinajdasCat.fur = "smooth";
-        dinajdasCat.age = 3;
-        dinajdasCat.hasClaws = true;
-        dinajdasCat.energy = 7;
-        dinajdasCat.name = "Loki";
-        dinajdasCat.describeSelf();
 
         Dog PhillyBoySamDog = new Dog();
         PhillyBoySamDog.size = "medium";
@@ -281,7 +275,7 @@ public class Main {
         samG.allPetsOwned.add(samGcat);
         samG.name = "Sam G";
 
-        dinajdasCat.rollUpAndSleep();
+        Loki.rollUpAndSleep();
         Joey.rollUpAndSleep();
         Joey.eat();
         owensMonkey.bark();
@@ -311,7 +305,7 @@ public class Main {
         System.out.println("Now the Pet Sitters are going to do their job:");
         james.walk(rileysSnake);
         Chris.feed();
-        dinajdasCat.eat();
+        Loki.eat();
         Capy.sleep();
         Capy.eat();
     }
