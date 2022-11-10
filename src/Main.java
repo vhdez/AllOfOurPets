@@ -9,7 +9,12 @@ public class Main {
         Owner owen = new Owner("Owen", 10, 10);
         allOwners.add(owen);
         Owner samG = new Owner("Sam G",9, 7);
+        Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
+        allOwners.add(new Owner("Gia", 17,52));
+        allOwners.add(new Owner("Dinajda", 12, 10));
+        allOwners.add(new Owner("Gia", 8,2));
+        allOwners.add(Chris);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -24,6 +29,15 @@ public class Main {
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
 
+        Owner Dinajda = allOwners.get(4);
+        capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
+        allPets.add(Capy);
+        Dinajda.allPetsOwned.add(Capy);
+
+        Cat Loki = new Cat("muscular", "grey tabby", 3, 7, "Loki", Dinajda, "smooth", true);
+        allPets.add(Loki);
+        Dinajda.allPetsOwned.add(Loki);
+
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
 
         Monkey owensMonkey = new Monkey("small", "brown", 17, 10, "Monkey", owen, "Soft", 1000, 1, "long");
@@ -34,6 +48,20 @@ public class Main {
         allPets.add(owensCat);
         owen.allPetsOwned.add(owensCat);
 
+
+        Owner Gia = allOwners.get (3);
+        Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
+        allPets.add(Joey);
+        Gia.allPetsOwned.add(Joey);
+
+        Cat Fifi = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
+        Frog Frogston = new Frog("tiny","brown", 2, 5, "Frogton", " baritone", "smooth", Chris);
+        Chris.allPetsOwned.add(Fifi);
+        Chris.allPetsOwned.add(Frogston);
+
+        Parrot Polly = new Parrot ("small", "Blue, Red and Yellow", 5, 2, "Polly", Gia,"Polly want a cracker",true );
+        allPets.add(Polly);
+        Gia.allPetsOwned.add(Polly);
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -57,11 +85,24 @@ public class Main {
         allOwners.get(1).feed();
         owen.feed();
         owensCat.purr();
+        allOwners.get(2).feed();
         // get a cat to do cat-only method
         ((Cat)allPets.get(1)).purr();
         // get a dog to do dog-only method
         ((Dog)allPets.get(0)).bark();
         System.out.println();
+
+
+        Dog SirajsDog = new Dog();
+        SirajsDog.size = "small";
+        SirajsDog.color = "grey and white";
+        SirajsDog.fur = "fluffy";
+        SirajsDog.age = 4;
+        SirajsDog.limbs = "arms and legs";
+        SirajsDog.energy = 10;
+        SirajsDog.name = "Smokey";
+        SirajsDog.describeSelf();
+
 
         Cat rileysCat = new Cat();
         rileysCat.size = "Chubby";
@@ -89,42 +130,18 @@ public class Main {
         riley.snake1 = rileysSnake;
         rileysCat.owner = riley;
 
-        // Gia's cat
-        Cat GiasCat = new Cat();
-        GiasCat.size = "Chunky";
-        GiasCat.color = "Black and White";
-        GiasCat.fur = "Fluffy";
-        GiasCat.age = 2;
-        GiasCat.hasClaws = true;
-        GiasCat.energy = 10;
-        GiasCat.name = "Joey";
-        GiasCat.describeSelf();
 
-//Chris' cat, frog, and owner
-        Cat ChrisCat = new Cat();
-        ChrisCat.size = "medium";
-        ChrisCat.color = "black";
-        ChrisCat.fur = "soft";
-        ChrisCat.age = 14;
-        ChrisCat.hasClaws = true;
-        ChrisCat.energy = 7;
-        ChrisCat.name = "Fifi";
-        ChrisCat.describeSelf();
+        Sibling ChrisSibling = new Sibling();
+        ChrisSibling.age = 23;
+        ChrisSibling.name = "Alyssa";
+        ChrisSibling.school = " Millersville University";
+        ChrisSibling.gender = " sister";
+        ChrisSibling.describeSelf();
 
-        Frog ChrisFrog = new Frog();
-        ChrisFrog.size = "tiny";
-        ChrisFrog.color = "brown";
-        ChrisFrog.texture = "smooth";
-        ChrisFrog.age = 2;
-        ChrisFrog.croakSound = " baritone";
-        ChrisFrog.fullness = 5;
-        ChrisFrog.name = "Frogston";
-        ChrisFrog.describeSelf();
-
-        Owner Chris = new Owner();
         Chris.name = "Chris";
-        Chris.allPetsOwned.add(ChrisCat);
-        Chris.frog1 = ChrisFrog;
+        Chris.allPetsOwned.add(Fifi);
+        Chris.frog1 = Frogston;
+        Chris.sibling1 = ChrisSibling;
 
         Cat ElijahsCat = new Cat();
         ElijahsCat.size = "medium";
@@ -145,15 +162,6 @@ public class Main {
         ElijahsFox.name = "Goku";
         ElijahsFox.describeSelf();
 
-        Cat dinajdasCat = new Cat();
-        dinajdasCat.size = "muscular";
-        dinajdasCat.color = "grey tabby";
-        dinajdasCat.fur = "smooth";
-        dinajdasCat.age = 3;
-        dinajdasCat.hasClaws = true;
-        dinajdasCat.energy = 7;
-        dinajdasCat.name = "Loki";
-        dinajdasCat.describeSelf();
 
         Dog PhillyBoySamDog = new Dog();
         PhillyBoySamDog.size = "medium";
@@ -186,12 +194,6 @@ public class Main {
        Elijah.name = "Elijah";
        Elijah.allPetsOwned.add(ElijahsCat);
 
-        Owner Dinajda = new Owner();
-        Dinajda.name = "Dinajda";
-        Dinajda.foodAmount = 12;
-        Dinajda.patienceAmount = 10;
-        Dinajda.allPetsOwned.add(dinajdasCat);
-
         Owner PhillyBoySam = new Owner ();
         PhillyBoySam.name = "pbs";
         PhillyBoySam.foodAmount = 15;
@@ -215,9 +217,9 @@ public class Main {
         rileysSnake.eat();
         rileysSnake.play();
 
-        GiasCat.purr();
-        GiasCat.kneadOn("Blanket");
-        ChrisCat.purr();
+        Joey.purr();
+        Joey.kneadOn("Blanket");
+        Fifi.purr();
 
         //Sam Work begin
 
@@ -262,19 +264,17 @@ public class Main {
         samG.allPetsOwned.add(samGcat);
         samG.name = "Sam G";
 
-        dinajdasCat.rollUpAndSleep();
-        GiasCat.rollUpAndSleep();
-        GiasCat.eat();
-        //Chris' pets actions
-        ChrisCat.kneadOn("blanket");
-        ChrisCat.eat();
-        ChrisFrog.croak();
-        ChrisFrog.eat();
-        ChrisFrog.leap();
+        Loki.rollUpAndSleep();
+        Joey.rollUpAndSleep();
+        Joey.eat();
+        //Chris' pets' (and sibling's) actions
+        Fifi.kneadOn("blanket");
+        Fifi.eat();
+        Frogston.croak();
+        Frogston.eat();
+        Frogston.leap();
         Chris.feed();
-        dinajdasCat.eat();
-        dinajdasCapy.describeSelf();
-        dinajdasCapy.sleep();
+        GiasParrot.talk();
 
         System.out.println(" ");
         System.out.println("Let's introduce all of our Petsitters:");
@@ -283,6 +283,31 @@ public class Main {
         owenMonkeySitter.location = "Philly";
         owenMonkeySitter.name = "Owen";
         owenMonkeySitter.sitMonkey();
+
+        ChrisSibling.wave();
+        ChrisSibling.pet();
+        GiasParrot.talk();
+
+        Pet_Sitter james = new Pet_Sitter();
+        james.name = "James";
+        james.foodAmount = 20;
+        james.patienceAmount = 20;
+        james.cat1 = rileysCat;
+        james.snake1 = rileysSnake;
+
+        System.out.println();
+        System.out.println("Let's introduce all of the Pet Sitters:");
+        james.describeSelf();
+
+        System.out.println();
+        System.out.println("Now the Pet Sitters are going to do their job:");
+        james.walk(rileysSnake);
+        Loki.eat();
+        Chris.feed();
+        Loki.eat();
+        Capy.sleep();
+        Capy.eat();
+        Polly.Mimic();
 
     }
 }
