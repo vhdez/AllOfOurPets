@@ -9,6 +9,7 @@ public class Main {
         Owner samG = new Owner("Sam G",9, 7);
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
+        allOwners.add(new Owner("Gia", 17,52));
         Owner Dinajda = new Owner("Dinajda", 12, 10);
         allOwners.add(Dinajda);
         allOwners.add(new Owner("Gia", 8,2));
@@ -38,6 +39,11 @@ public class Main {
         Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
         allPets.add(Joey);
         Gia.allPetsOwned.add(Joey);
+
+        Parrot Polly = new Parrot ("small", "Blue, Red and Yellow", 5, 2, "Polly", Gia,"Polly want a cracker",true );
+        allPets.add(Polly);
+        Gia.allPetsOwned.add(Polly);
+
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -208,12 +214,6 @@ public class Main {
         Owner owen = new Owner();
         owen.name = "Owen";
         owen.allPetsOwned.add(owensCat);
-
-        //Gia as an Owner
-        Gia.name = "Gia";
-        Gia.foodAmount = 17;
-        Gia.patienceAmount = 52;
-        Gia.allPetsOwned.add(GiasCat);
 
        Owner Elijah = new Owner();
        Elijah.name = "Elijah";
