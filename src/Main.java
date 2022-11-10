@@ -49,7 +49,6 @@ public class Main {
         allPets.add(Polly);
         Gia.allPetsOwned.add(Polly);
 
-
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
         for (Owner owner: allOwners) {
@@ -298,5 +297,6 @@ public class Main {
         dinajdasCat.eat();
         Capy.sleep();
         Capy.eat();
+        Polly.Mimic();
     }
 }
