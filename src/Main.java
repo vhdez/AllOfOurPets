@@ -86,7 +86,6 @@ public class Main {
         SirajsDog.name = "Smokey";
         SirajsDog.describeSelf();
 
-
         Cat rileysCat = new Cat();
         rileysCat.size = "Chubby";
         rileysCat.color = "orange and white";
