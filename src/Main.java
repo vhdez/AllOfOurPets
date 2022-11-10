@@ -10,7 +10,8 @@ public class Main {
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
         allOwners.add(new Owner("Gia", 17,52));
-        allOwners.add(new Owner("Dinajda", 12, 10));
+        Owner Dinajda = new Owner("Dinajda", 12, 10);
+        allOwners.add(Dinajda);
         allOwners.add(new Owner("Gia", 8,2));
         allOwners.add(Chris);
 
@@ -34,7 +35,7 @@ public class Main {
         allPets.add(samGpanda);
         samG.allPetsOwned.add(samGpanda);
 
-        Owner Dinajda = allOwners.get(4);
+        Dinajda = allOwners.get(2);
         capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
         allPets.add(Capy);
         Dinajda.allPetsOwned.add(Capy);
@@ -86,7 +87,6 @@ public class Main {
         ((Dog)allPets.get(0)).bark();
         System.out.println();
 
-
         Dog SirajsDog = new Dog();
         SirajsDog.size = "small";
         SirajsDog.color = "grey and white";
@@ -96,7 +96,6 @@ public class Main {
         SirajsDog.energy = 10;
         SirajsDog.name = "Smokey";
         SirajsDog.describeSelf();
-
 
         Cat rileysCat = new Cat();
         rileysCat.size = "Chubby";
@@ -274,6 +273,5 @@ public class Main {
         Capy.sleep();
         Capy.eat();
         Polly.Mimic();
-
     }
 }
