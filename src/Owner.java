@@ -7,7 +7,6 @@ public class Owner {
     int patienceAmount;
     ArrayList<Pet> allPetsOwned;
     Snake snake1;
-    Panda panda1;
     Frog frog1;
 
     // constructors
@@ -54,9 +53,6 @@ public class Owner {
         }
         if (frog1 != null ) {
             System.out.println("Owner " + name + " owns " + frog1.name);
-        }
-        if (panda1 != null ) {
-            System.out.println("Owner " + name + " owns " + panda1.name);
         }
     }
 }

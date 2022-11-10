@@ -1,24 +1,18 @@
-public class Panda {
+public class Panda extends Pet {
         // Fields
-        String size;
-
-        String pandaAbility;
-
-        String species;
-
-        String height;
-        String color;
 
         String fur;
+        String pandaAbility;
+        String species;
+        String height;
 
-        int age;
-
-        int energy;
-
-        String name;
-
-        Owner owner;
-
+    public Panda(String size, String color, int age, int energy, String name, Owner owner, String fur, String pandaAbility, String Species, String height) {
+        super(size, color, age, energy, name, owner);
+        this.fur = fur;
+        this.pandaAbility = pandaAbility;
+        this.species = species;
+        this.height = height;
+    }
         // Methods
         void describeSelf() {
             System.out.println("WOO WOO!  I'm " + name + ", a " + size + " " + height + "-sized, " + age + " year-old " + color + " " + species +" with " + fur + " fur. My favorite activity is "+pandaAbility+"!");

@@ -22,7 +22,14 @@ public class Main {
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
 
-        allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
+        Cat samGcat = new Cat("large","orange and white",4,9,"Pickles",samG, "soft",true);
+        allPets.add(samGcat);
+        samG.allPetsOwned.add(samGcat);
+
+        Panda samGpanda = new Panda("small","black and white",2,2,"Kikkoman",samG,"soft","climbing","panda","short");
+        allPets.add(samGpanda);
+        samG.allPetsOwned.add(samGpanda);
+
 
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
@@ -214,7 +221,6 @@ public class Main {
         riley.describeSelf();
         Gia.describeSelf();
         Dinajda.describeSelf();
-        samG.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what the pets and owners will do:");
@@ -231,33 +237,6 @@ public class Main {
 
         //Sam Work begin
 
-        samG.foodAmount = 50;
-        samG.patienceAmount = 100;
-        Cat samGcat = new Cat();
-        samGcat.size = "Large";
-        samGcat.color = "orange and white";
-        samGcat.fur = "soft";
-        samGcat.age = 4;
-        samGcat.hasClaws = true;
-        samGcat.energy = 9;
-        samGcat.name = "Pickles";
-        samGcat.describeSelf();
-
-        Panda samGpanda = new Panda();
-        samGpanda.species = "panda";
-        samGpanda.owner = samG;
-        samGpanda.size = "small";
-        samGpanda.height = "short";
-        samGpanda.color = "black and white";
-        samGpanda.fur = "soft";
-        samGpanda.age = 2;
-        samGpanda.pandaAbility = "climbing";
-        samGpanda.energy = 2;
-        samGpanda.name = "Kikkoman";
-        samGpanda.describeSelf();
-        samGpanda.eat();
-        samGpanda.climb();
-        samGpanda.sleep();
 
         Parrot GiasParrot = new Parrot();
         GiasParrot.size = "small";
@@ -267,9 +246,7 @@ public class Main {
         GiasParrot.name = "Polly";
         GiasParrot.describeSelf();
 
-        samG.panda1 = samGpanda;
-        samG.allPetsOwned.add(samGcat);
-        samG.name = "Sam G";
+
 
         dinajdasCat.rollUpAndSleep();
         GiasCat.rollUpAndSleep();
@@ -285,5 +262,9 @@ public class Main {
         dinajdasCat.eat();
         dinajdasCapy.describeSelf();
         dinajdasCapy.sleep();
+        samGpanda.eat();
+        samGpanda.climb();
+        samGpanda.sleep();
+
     }
 }
