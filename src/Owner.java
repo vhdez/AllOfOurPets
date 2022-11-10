@@ -10,6 +10,7 @@ public class Owner extends Person{
     ArrayList<Pet> allPetsOwned;
     Snake snake1;
     Frog frog1;
+    Sibling sibling1;
 
     // constructors
     public Owner() {

@@ -29,6 +29,7 @@ public class Main {
         Cat garfield = new Cat("fat", "orange", 35, 2, "Garfield", mrH, "soft", false);
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
+
         Cat samGcat = new Cat("large","orange and white",4,9,"Pickles",samG, "soft",true);
         allPets.add(samGcat);
         samG.allPetsOwned.add(samGcat);
