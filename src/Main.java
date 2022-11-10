@@ -14,8 +14,6 @@ public class Main {
         allOwners.add(Dinajda);
         allOwners.add(new Owner("Gia", 8,2));
         allOwners.add(Chris);
-        Owner Zane = new Owner("Zane", 7, 7);
-        allOwners.add(Zane);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -52,9 +50,6 @@ public class Main {
         Gia.allPetsOwned.add(Polly);
 
 
-        Tiger bronald = new Tiger("large", "Orange/White", 2, 7, "bronald", Zane, "soft", true);
-        allPets.add(bronald);
-        Zane.allPetsOwned.add(bronald);
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
         for (Owner owner: allOwners) {
@@ -142,19 +137,6 @@ public class Main {
         owensCat.energy = 5;
         owensCat.name = "Snow";
         owensCat.describeSelf();
-
-
-
-        Tiger ZanesTiger = new Tiger();
-        Zane.name = "Zane";
-        ZanesTiger.size = "Large";
-        ZanesTiger.color = "White/Orange";
-        ZanesTiger.fur = "soft";
-        ZanesTiger.age = 1;
-        ZanesTiger.hasClaws = true;
-        ZanesTiger.energy = 7;
-        ZanesTiger.name = "bronald";
-        ZanesTiger.describeSelf();
 
         Cat ElijahsCat = new Cat();
         ElijahsCat.size = "medium";
