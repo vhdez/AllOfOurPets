@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
-public class Owner {
+public class Owner extends Person{
     // fields
     String name;
     int foodAmount;
+
+    int moneyAmount;
     int patienceAmount;
     ArrayList<Pet> allPetsOwned;
     Snake snake1;

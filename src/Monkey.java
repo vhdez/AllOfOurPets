@@ -1,31 +1,27 @@
-public class Monkey {
+public class Monkey extends Pet {
     // Fields
-    String size;
-
-    String color;
-
     String fur;
-
-    int age;
-
-    int energy;
-
     int benchWeight;
 
     int bodyFat;
 
-    String limbs;
-
-    String name;
-
     String tail;
 
+    public Monkey(){
+    }
 
-    Owner owner;
+    public Monkey(String size, String color, int age, int energy, String name, Owner owner, String fur, int benchWeight, int bodyFat, String tail) {
+        super(size, color, age, energy, name, owner);
+        this.fur = fur;
+        this.benchWeight = benchWeight;
+        this.bodyFat = bodyFat;
+        this.tail = tail;
+    }
+
 
     // Methods
     void describeSelf() {
-        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " monkey with " + fur + " fur and my tail is" + tail+ " . I can bench " + benchWeight + "kg and my body fat percentage is " + bodyFat + ".");
+        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " monkey with " + fur + " fur and my tail is " + tail+ " . I can bench " + benchWeight + "kg and my body fat percentage is " + bodyFat + ".");
     }
 
     void WOOP() {

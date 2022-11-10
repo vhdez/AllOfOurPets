@@ -1,5 +1,4 @@
 public class MonkeySitter {
-
     int age;
 
     int money;
