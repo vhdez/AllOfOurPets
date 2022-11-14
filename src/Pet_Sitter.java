@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-public class Pet_Sitter {
-    String name;
+public class Pet_Sitter extends Person{
     ArrayList<Pet> petsToSit;
     Dog dog1;
     Dog dog2;
