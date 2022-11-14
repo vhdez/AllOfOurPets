@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,14 +23,18 @@ public class Main {
         allOwners.add(riley);
         Owner Zane = new Owner("Zane", 7, 7);
         allOwners.add(Zane);
+     Owner PhillyBoySam = new Owner ("Pbs", 10, 12);
+         allOwners.add(PhillyBoySam);
+       ;
+
         Owner Elijah = new Owner("Elijah", 10,4);
         allOwners.add(Elijah);
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
 
-        Dog widow = new Dog("large", "black", 2, 1, "Widow", mrLatimer, "coarse", "paws");
+        Dog widow = new Dog("large", "black", 2, 18, "Widow", PhillyBoySam, "coarse", "paws");
         allPets.add(widow);
-        mrLatimer.allPetsOwned.add(widow);
+       PhillyBoySam.allPetsOwned.add(widow);
 
         Cat garfield = new Cat("fat", "orange", 35, 2, "Garfield", mrH, "soft", false);
         allPets.add(garfield);
@@ -146,21 +149,6 @@ public class Main {
         ChrisSibling.describeSelf();
         Chris.sibling1 = ChrisSibling;
 
-        Dog PhillyBoySamDog = new Dog();
-        PhillyBoySamDog.size = "medium";
-        PhillyBoySamDog.color = "black";
-        PhillyBoySamDog.fur = "short";
-        PhillyBoySamDog.age = 2;
-        PhillyBoySamDog.energy = 9;
-        PhillyBoySamDog.limbs = "paws";
-        PhillyBoySamDog.name = "Widow";
-        PhillyBoySamDog.describeSelf();
-
-        Owner PhillyBoySam = new Owner ();
-        PhillyBoySam.name = "pbs";
-        PhillyBoySam.foodAmount = 15;
-        PhillyBoySam.patienceAmount = 12;
-        PhillyBoySam.allPetsOwned.add(PhillyBoySamDog);
         // Pets and Owners do some action
 
 
