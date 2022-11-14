@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +24,8 @@ public class Main {
         allOwners.add(riley);
         Owner Zane = new Owner("Zane", 7, 7);
         allOwners.add(Zane);
-
+        Owner Elijah = new Owner("Elijah", 10,4);
+        allOwners.add(Elijah);
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
 
@@ -82,6 +84,16 @@ public class Main {
         allPets.add(greenbean);
         riley.allPetsOwned.add(greenbean);
 
+        Cat Atticus = new Cat("medium","grey",2, 6, "Atticus", Elijah, "soft", true);
+        allPets.add(Atticus);
+        Elijah.allPetsOwned.add(Atticus);
+
+        Fox Geranamo = new Fox("small","red",4, 8, "Geranamo", Elijah, "rough", true,"HAHAHHAHAHA");
+        Geranamo.laughs();
+        allPets.add(Geranamo);
+        Elijah.allPetsOwned.add(Geranamo);
+
+
         Tiger bronald = new Tiger("large", "Orange/White", 2, 7, "bronald", Zane, "soft", true);
         allPets.add(bronald);
         Zane.allPetsOwned.add(bronald);
@@ -134,26 +146,6 @@ public class Main {
         ChrisSibling.describeSelf();
         Chris.sibling1 = ChrisSibling;
 
-        Cat ElijahsCat = new Cat();
-        ElijahsCat.size = "medium";
-        ElijahsCat.color = "grey";
-        ElijahsCat.fur = "soft";
-        ElijahsCat.age = 2;
-        ElijahsCat.hasClaws = true;
-        ElijahsCat.energy = 6;
-        ElijahsCat.name = "Atticus";
-        ElijahsCat.describeSelf();
-
-       Fox ElijahsFox = new Fox();
-        ElijahsFox.size = "small";
-        ElijahsFox.color = "red";
-        ElijahsFox.fur = "rough";
-        ElijahsFox.age = 4;
-        ElijahsFox.energy = 8;
-        ElijahsFox.name = "Goku";
-        ElijahsFox.describeSelf();
-
-
         Dog PhillyBoySamDog = new Dog();
         PhillyBoySamDog.size = "medium";
         PhillyBoySamDog.color = "black";
@@ -163,10 +155,6 @@ public class Main {
         PhillyBoySamDog.limbs = "paws";
         PhillyBoySamDog.name = "Widow";
         PhillyBoySamDog.describeSelf();
-
-       Owner Elijah = new Owner();
-       Elijah.name = "Elijah";
-       Elijah.allPetsOwned.add(ElijahsCat);
 
         Owner PhillyBoySam = new Owner ();
         PhillyBoySam.name = "pbs";
