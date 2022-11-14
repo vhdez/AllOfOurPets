@@ -2,18 +2,19 @@ import java.util.ArrayList;
 
 public class Owner extends Person{
     // fields
-    String name;
     int foodAmount;
-
     int moneyAmount;
     int patienceAmount;
     ArrayList<Pet> allPetsOwned;
-    Snake snake1;
     Sibling sibling1;
 
     // constructors
-    public Owner() {
+    public Owner(String occupation, int age, String ethnicity, String name, String gender, String height, int foodAmount, int moneyAmount, int patienceAmount) {
+        super(age, name,occupation, ethnicity, gender, height);
         this.allPetsOwned = new ArrayList<>();
+        this.foodAmount = foodAmount;
+        this.moneyAmount = moneyAmount;
+        this.patienceAmount = patienceAmount;
     }
 
     public Owner(String name, int foodAmount, int patienceAmount) {
@@ -49,9 +50,6 @@ public class Owner extends Person{
         System.out.println("Owner " + name + " has " + foodAmount + " pieces of food and " + patienceAmount + " remaining patience.");
         for (Pet pet: allPetsOwned) {
             System.out.println("Owner " + name + " owns " + pet.name);
-        }
-        if (snake1 != null ) {
-            System.out.println("Owner " + name + " owns " + snake1.name);
         }
     }
 }
