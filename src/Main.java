@@ -19,6 +19,8 @@ public class Main {
         allOwners.add(Dinajda);
         allOwners.add(new Owner("Gia", 8,2));
         allOwners.add(Chris);
+        Owner riley = new Owner("Riley", 15, 20);
+        allOwners.add(riley);
         Owner Zane = new Owner("Zane", 7, 7);
         allOwners.add(Zane);
 
@@ -72,6 +74,14 @@ public class Main {
         allPets.add(Polly);
         Gia.allPetsOwned.add(Polly);
 
+        Cat charles = new Cat("chubby", "orange", 2, 3, "Charles", riley, "soft", true);
+        allPets.add(charles);
+        riley.allPetsOwned.add(charles);
+
+        Snake greenbean = new Snake("long", "green", 1, 3, "Greenbean", riley);
+        allPets.add(greenbean);
+        riley.allPetsOwned.add(greenbean);
+
         Tiger bronald = new Tiger("large", "Orange/White", 2, 7, "bronald", Zane, "soft", true);
         allPets.add(bronald);
         Zane.allPetsOwned.add(bronald);
@@ -115,31 +125,6 @@ public class Main {
         SirajsDog.name = "Smokey";
         SirajsDog.describeSelf();
 
-        Cat rileysCat = new Cat();
-        rileysCat.size = "Chubby";
-        rileysCat.color = "orange and white";
-        rileysCat.fur = "soft";
-        rileysCat.age = 2;
-        rileysCat.hasClaws = true;
-        rileysCat.energy = 3;
-        rileysCat.name = "Charles";
-        rileysCat.describeSelf();
-
-        Snake rileysSnake = new Snake();
-        rileysSnake.size = "Long";
-        rileysSnake.color = "green";
-        rileysSnake.age = 3;
-        rileysSnake.energy = 1;
-        rileysSnake.name = "Greenbean";
-        rileysSnake.describeSelf();
-
-        Owner riley = new Owner();
-        riley.name = "riley";
-        riley.foodAmount = 10;
-        riley.patienceAmount = 20;
-        riley.allPetsOwned.add(rileysCat);
-        riley.snake1 = rileysSnake;
-        rileysCat.owner = riley;
 
         Sibling ChrisSibling = new Sibling();
         ChrisSibling.age = 23;
@@ -189,10 +174,7 @@ public class Main {
         PhillyBoySam.patienceAmount = 12;
         PhillyBoySam.allPetsOwned.add(PhillyBoySamDog);
         // Pets and Owners do some action
-        rileysCat.kneadOn("hoodie");
-        rileysSnake.rollUpAndSleep();
-        rileysSnake.eat();
-        rileysSnake.play();
+
 
         Loki.rollUpAndSleep();
         Joey.rollUpAndSleep();
@@ -222,8 +204,8 @@ public class Main {
         james.name = "James";
         james.foodAmount = 20;
         james.patienceAmount = 20;
-        james.cat1 = rileysCat;
-        james.snake1 = rileysSnake;
+        james.cat1 = charles;
+        james.snake1 = greenbean;
 
         System.out.println();
         System.out.println("Let's introduce all of the Pet Sitters:");
@@ -231,7 +213,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Now the Pet Sitters are going to do their job:");
-        james.walk(rileysSnake);
+        james.walk(greenbean);
         Loki.eat();
         samGpanda.eat();
         samGpanda.climb();

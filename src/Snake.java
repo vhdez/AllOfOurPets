@@ -1,11 +1,8 @@
-public class Snake {
-    String size;
-    String color;
-    String name;
-    int age;
-    int energy;
-    Owner owner;
+public class Snake extends Pet {
 
+    public Snake(String size, String color, int age, int energy, String name, Owner owner) {
+        super(size, color, age, energy, name, owner);
+    }
 
     void describeSelf() {
         System.out.println("Sssssss I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " snake.");
