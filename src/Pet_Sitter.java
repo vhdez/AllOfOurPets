@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+
 public class Pet_Sitter {
     String name;
+    ArrayList<Pet> petsToSit;
     Dog dog1;
     Dog dog2;
     Cat cat1;

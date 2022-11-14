@@ -9,7 +9,6 @@ public class Owner extends Person{
     int patienceAmount;
     ArrayList<Pet> allPetsOwned;
     Snake snake1;
-    Frog frog1;
     Sibling sibling1;
 
     // constructors
@@ -53,9 +52,6 @@ public class Owner extends Person{
         }
         if (snake1 != null ) {
             System.out.println("Owner " + name + " owns " + snake1.name);
-        }
-        if (frog1 != null ) {
-            System.out.println("Owner " + name + " owns " + frog1.name);
         }
     }
 }

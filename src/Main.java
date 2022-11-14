@@ -4,14 +4,17 @@ public class Main {
     public static void main(String[] args) {
         // Construct all of the Owners
         ArrayList<Owner> allOwners = new ArrayList<>();
-        allOwners.add(new Owner("Mr. Hernandez", 10, 5));
-        allOwners.add(new Owner("Mr. Latimer", 8,2));
+        Owner mrH = new Owner("Mr. Hernandez", 10, 5);
+        allOwners.add(mrH);
+        Owner mrLatimer = new Owner("Mr. Latimer", 8,2);
+        allOwners.add(mrLatimer);
         Owner owen = new Owner("Owen", 10, 10);
         allOwners.add(owen);
         Owner samG = new Owner("Sam G",9, 7);
         Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
-        allOwners.add(new Owner("Gia", 17,52));
+        Owner Gia = new Owner("Gia", 17,52);
+        allOwners.add(Gia);
         Owner Dinajda = new Owner("Dinajda", 12, 10);
         allOwners.add(Dinajda);
         allOwners.add(new Owner("Gia", 8,2));
@@ -20,12 +23,10 @@ public class Main {
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
 
-        Owner mrLatimer = allOwners.get(1);
         Dog widow = new Dog("large", "black", 2, 1, "Widow", mrLatimer, "coarse", "paws");
         allPets.add(widow);
         mrLatimer.allPetsOwned.add(widow);
 
-        Owner mrH = allOwners.get(0);
         Cat garfield = new Cat("fat", "orange", 35, 2, "Garfield", mrH, "soft", false);
         allPets.add(garfield);
         mrH.allPetsOwned.add(garfield);
@@ -38,7 +39,6 @@ public class Main {
         allPets.add(samGpanda);
         samG.allPetsOwned.add(samGpanda);
 
-        Dinajda = allOwners.get(2);
         capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
         allPets.add(Capy);
         Dinajda.allPetsOwned.add(Capy);
@@ -57,8 +57,6 @@ public class Main {
         allPets.add(owensCat);
         owen.allPetsOwned.add(owensCat);
 
-
-        Owner Gia = allOwners.get (3);
         Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
         allPets.add(Joey);
         Gia.allPetsOwned.add(Joey);
@@ -143,10 +141,6 @@ public class Main {
         ChrisSibling.school = " Millersville University";
         ChrisSibling.gender = " sister";
         ChrisSibling.describeSelf();
-
-        Chris.name = "Chris";
-        Chris.allPetsOwned.add(Fifi);
-        Chris.frog1 = Frogston;
         Chris.sibling1 = ChrisSibling;
 
         Cat ElijahsCat = new Cat();
@@ -188,39 +182,11 @@ public class Main {
         PhillyBoySam.foodAmount = 15;
         PhillyBoySam.patienceAmount = 12;
         PhillyBoySam.allPetsOwned.add(PhillyBoySamDog);
-
-        System.out.println();
-        System.out.println("Let's introduce all of the owners:");
-        // Students: construct some owners here
-        Chris.describeSelf();
-        riley.describeSelf();
-        Gia.describeSelf();
-        Dinajda.describeSelf();
-
-        System.out.println();
-        System.out.println("Let's see what the pets and owners will do:");
         // Pets and Owners do some action
         rileysCat.kneadOn("hoodie");
         rileysSnake.rollUpAndSleep();
         rileysSnake.eat();
         rileysSnake.play();
-
-        Joey.purr();
-        Joey.kneadOn("Blanket");
-        Fifi.purr();
-
-        //Sam Work begin
-
-
-        Parrot GiasParrot = new Parrot();
-        GiasParrot.size = "small";
-        GiasParrot.color = "Blue Red and Yellow";
-        GiasParrot.age = 5;
-        GiasParrot.energy = 2;
-        GiasParrot.name = "Polly";
-        GiasParrot.describeSelf();
-
-
 
         Loki.rollUpAndSleep();
         Joey.rollUpAndSleep();
@@ -232,7 +198,7 @@ public class Main {
         Frogston.eat();
         Frogston.leap();
         Chris.feed();
-        GiasParrot.talk();
+        Polly.talk();
 
         System.out.println(" ");
         System.out.println("Let's introduce all of our Petsitters:");
@@ -244,7 +210,7 @@ public class Main {
 
         ChrisSibling.wave();
         ChrisSibling.pet();
-        GiasParrot.talk();
+        Polly.talk();
 
         Pet_Sitter james = new Pet_Sitter();
         james.name = "James";
