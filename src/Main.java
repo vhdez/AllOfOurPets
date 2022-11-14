@@ -19,6 +19,8 @@ public class Main {
         allOwners.add(Dinajda);
         allOwners.add(new Owner("Gia", 8,2));
         allOwners.add(Chris);
+        Owner Zane = new Owner("Zane", 7, 7);
+        allOwners.add(Zane);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
@@ -70,6 +72,9 @@ public class Main {
         allPets.add(Polly);
         Gia.allPetsOwned.add(Polly);
 
+        Tiger bronald = new Tiger("large", "Orange/White", 2, 7, "bronald", Zane, "soft", true);
+        allPets.add(bronald);
+        Zane.allPetsOwned.add(bronald);
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
         for (Owner owner: allOwners) {
@@ -80,6 +85,7 @@ public class Main {
         for (Pet pet: allPets) {
             pet.describeSelf();
         }
+
 
         System.out.println();
         System.out.println("Let's see what our PETS and OWNERS can do:");
