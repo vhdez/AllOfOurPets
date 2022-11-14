@@ -225,6 +225,8 @@ public class Main {
         james.cat1 = rileysCat;
         james.snake1 = rileysSnake;
 
+        AnimalRescuer Jackie = new AnimalRescuer(56, "Jackie", "Animal Rescuer", "white", "female", "5'1", )
+
         System.out.println();
         System.out.println("Let's introduce all of the Pet Sitters:");
         james.describeSelf();
