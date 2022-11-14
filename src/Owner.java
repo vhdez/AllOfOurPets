@@ -46,7 +46,7 @@ public class Owner extends Person{
         //System.out.println(name + "kneads on" + cat.owner + what);
     }
 
-    void ownerDescribeSelf() {
+    void describeSelf() {
         System.out.println("Owner " + name + " has " + foodAmount + " pieces of food and " + patienceAmount + " remaining patience.");
         for (Pet pet: allPetsOwned) {
             System.out.println("Owner " + name + " owns " + pet.name);
