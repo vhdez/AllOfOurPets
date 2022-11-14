@@ -141,7 +141,8 @@ public class Main {
         SirajsDog.describeSelf();
 
 
-        Sibling ChrisSibling = new Sibling();
+        //Chris' sibling
+        Sibling ChrisSibling = new Sibling("Alyssa", 23, "sister", "Millersville University", "unemployed", "white");
         ChrisSibling.age = 23;
         ChrisSibling.name = "Alyssa";
         ChrisSibling.school = " Millersville University";
@@ -157,9 +158,7 @@ public class Main {
         Joey.eat();
         //Chris' pets' (and sibling's) actions
         Fifi.kneadOn("blanket");
-        Fifi.eat();
         Frogston.croak();
-        Frogston.eat();
         Frogston.leap();
         Chris.feed();
         Polly.talk();
