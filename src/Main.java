@@ -68,10 +68,13 @@ public class Main {
         allPets.add(Joey);
         Gia.allPetsOwned.add(Joey);
 
+        //Chris' Pets/Person
         Cat Fifi = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
         Frog Frogston = new Frog("tiny","brown", 2, 5, "Frogton", " baritone", "smooth", Chris);
+        Sibling ChrisSibling = new Sibling("Alyssa", 23, "unemployed", "Italian", "sister", "Millersville University");
         Chris.allPetsOwned.add(Fifi);
         Chris.allPetsOwned.add(Frogston);
+        Chris.mySiblings.add(ChrisSibling);
         allPets.add(Fifi);
         allPets.add(Frogston);
 
@@ -158,13 +161,6 @@ public class Main {
         SirajsDog.describeSelf();
 
         // All of the Persons
-        //Chris' sibling
-        Sibling ChrisSibling = new Sibling("Alyssa", 23, "sister", "Millersville University", "unemployed", "white");
-        ChrisSibling.age = 23;
-        ChrisSibling.name = "Alyssa";
-        ChrisSibling.school = " Millersville University";
-        ChrisSibling.gender = " sister";
-        Chris.sibling1 = ChrisSibling;
 
         MonkeySitter owenMonkeySitter = new MonkeySitter();
         owenMonkeySitter.age = 17;

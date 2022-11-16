@@ -1,5 +1,7 @@
-public class Person {
+import java.util.ArrayList;
 
+public class Person {
+    ArrayList<Sibling> mySiblings;
     int age;
     String name;
     String occupation;
@@ -9,8 +11,11 @@ public class Person {
     String height;
 
     public Person() {
+        mySiblings = new ArrayList<>();
+
     }
     public Person(int age, String name, String occupation,  String ethnicity, String gender,  String height) {
+        mySiblings = new ArrayList<>();
         this.occupation = occupation;
         this.age = age;
         this.ethnicity = ethnicity;
