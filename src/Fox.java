@@ -1,13 +1,15 @@
-public class Fox {
+public class Fox extends Pet{
     // Fields
-    String size;
-    String color;
     String fur;
-    int age;
     boolean hasClaws;
-    int energy;
-    String name;
-    Owner owner;
+    String laughMessage;
+
+    public Fox(String size, String color, int age, int energy, String name, Owner owner, String fur, boolean hasClaws, String laughMessage) {
+        super(size, color, age, energy, name, owner);
+        this.fur = fur;
+        this.hasClaws = hasClaws;
+        this.laughMessage = laughMessage;
+    }
 
     // Methods
     void describeSelf() {
@@ -32,7 +34,7 @@ public class Fox {
     }
 
     void laughs() {
-        System.out.println(name + " laughs hello.");
+        System.out.println(name + " laughs " + laughMessage);
     }
 
     void eat() {

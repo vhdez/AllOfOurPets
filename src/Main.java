@@ -11,23 +11,28 @@ public class Main {
         Owner owen = new Owner("Owen", 10, 10);
         allOwners.add(owen);
         Owner samG = new Owner("Sam G",9, 7);
-        Owner Chris = new Owner("Chris", 10, 5);
         allOwners.add(samG);
+        Owner Chris = new Owner("Chris", 10, 5);
+        allOwners.add(Chris);
         Owner Gia = new Owner("Gia", 17,52);
         allOwners.add(Gia);
         Owner Dinajda = new Owner("Dinajda", 12, 10);
         allOwners.add(Dinajda);
-        allOwners.add(new Owner("Gia", 8,2));
-        allOwners.add(Chris);
+        Owner riley = new Owner("Riley", 15, 20);
+        allOwners.add(riley);
         Owner Zane = new Owner("Zane", 7, 7);
         allOwners.add(Zane);
+        Owner PhillyBoySam = new Owner ("Pbs", 10, 12);
+        allOwners.add(PhillyBoySam);
+        Owner Elijah = new Owner("Elijah", 10,4);
+        allOwners.add(Elijah);
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
 
-        Dog widow = new Dog("large", "black", 2, 1, "Widow", mrLatimer, "coarse", "paws");
+        Dog widow = new Dog("large", "black", 2, 18, "Widow", PhillyBoySam, "coarse", "paws");
         allPets.add(widow);
-        mrLatimer.allPetsOwned.add(widow);
+        PhillyBoySam.allPetsOwned.add(widow);
 
         Cat garfield = new Cat("fat", "orange", 35, 2, "Garfield", mrH, "soft", false);
         allPets.add(garfield);
@@ -63,18 +68,40 @@ public class Main {
         allPets.add(Joey);
         Gia.allPetsOwned.add(Joey);
 
+        //Chris' Pets/Person
         Cat Fifi = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
         Frog Frogston = new Frog("tiny","brown", 2, 5, "Frogton", " baritone", "smooth", Chris);
+        Sibling ChrisSibling = new Sibling("Alyssa", 23, "unemployed", "Italian", "sister", "Millersville University");
         Chris.allPetsOwned.add(Fifi);
         Chris.allPetsOwned.add(Frogston);
+        Chris.mySiblings.add(ChrisSibling);
+        allPets.add(Fifi);
+        allPets.add(Frogston);
 
         Parrot Polly = new Parrot ("small", "Blue, Red and Yellow", 5, 2, "Polly", Gia,"Polly want a cracker",true );
         allPets.add(Polly);
         Gia.allPetsOwned.add(Polly);
 
+        Cat charles = new Cat("chubby", "orange", 2, 3, "Charles", riley, "soft", true);
+        allPets.add(charles);
+        riley.allPetsOwned.add(charles);
+
+        Snake greenbean = new Snake("long", "green", 1, 3, "Greenbean", riley);
+        allPets.add(greenbean);
+        riley.allPetsOwned.add(greenbean);
+
+        Cat Atticus = new Cat("medium","grey",2, 6, "Atticus", Elijah, "soft", true);
+        allPets.add(Atticus);
+        Elijah.allPetsOwned.add(Atticus);
+
+        Fox Geranamo = new Fox("small","red",4, 8, "Geranamo", Elijah, "rough", true,"HAHAHHAHAHA");
+        allPets.add(Geranamo);
+        Elijah.allPetsOwned.add(Geranamo);
+
         Tiger bronald = new Tiger("large", "Orange/White", 2, 7, "bronald", Zane, "soft", true);
         allPets.add(bronald);
         Zane.allPetsOwned.add(bronald);
+
         System.out.println();
         System.out.println("Let's introduce all of our OWNERS:");
         for (Owner owner: allOwners) {
@@ -85,7 +112,6 @@ public class Main {
         for (Pet pet: allPets) {
             pet.describeSelf();
         }
-
 
         System.out.println();
         System.out.println("Let's see what our PETS and OWNERS can do:");
@@ -103,6 +129,25 @@ public class Main {
         ((Cat)allPets.get(1)).purr();
         // get a dog to do dog-only method
         ((Dog)allPets.get(0)).bark();
+        Geranamo.laughs();
+        Loki.eat();
+        samGpanda.eat();
+        samGpanda.climb();
+        samGpanda.sleep();
+        Loki.eat();
+        Chris.feed();
+        Loki.eat();
+        Capy.sleep();
+        Capy.eat();
+        Polly.Mimic();
+        Loki.rollUpAndSleep();
+        Joey.rollUpAndSleep();
+        Joey.eat();
+        Fifi.kneadOn("blanket");
+        Frogston.croak();
+        Frogston.leap();
+        Chris.feed();
+        Polly.talk();
         System.out.println();
 
         Dog SirajsDog = new Dog();
@@ -115,135 +160,34 @@ public class Main {
         SirajsDog.name = "Smokey";
         SirajsDog.describeSelf();
 
-        Cat rileysCat = new Cat();
-        rileysCat.size = "Chubby";
-        rileysCat.color = "orange and white";
-        rileysCat.fur = "soft";
-        rileysCat.age = 2;
-        rileysCat.hasClaws = true;
-        rileysCat.energy = 3;
-        rileysCat.name = "Charles";
-        rileysCat.describeSelf();
+        // All of the Persons
 
-        Snake rileysSnake = new Snake();
-        rileysSnake.size = "Long";
-        rileysSnake.color = "green";
-        rileysSnake.age = 3;
-        rileysSnake.energy = 1;
-        rileysSnake.name = "Greenbean";
-        rileysSnake.describeSelf();
-
-        Owner riley = new Owner();
-        riley.name = "riley";
-        riley.foodAmount = 10;
-        riley.patienceAmount = 20;
-        riley.allPetsOwned.add(rileysCat);
-        riley.snake1 = rileysSnake;
-        rileysCat.owner = riley;
-
-        Sibling ChrisSibling = new Sibling();
-        ChrisSibling.age = 23;
-        ChrisSibling.name = "Alyssa";
-        ChrisSibling.school = " Millersville University";
-        ChrisSibling.gender = " sister";
-        ChrisSibling.describeSelf();
-        Chris.sibling1 = ChrisSibling;
-
-        Cat ElijahsCat = new Cat();
-        ElijahsCat.size = "medium";
-        ElijahsCat.color = "grey";
-        ElijahsCat.fur = "soft";
-        ElijahsCat.age = 2;
-        ElijahsCat.hasClaws = true;
-        ElijahsCat.energy = 6;
-        ElijahsCat.name = "Atticus";
-        ElijahsCat.describeSelf();
-
-       Fox ElijahsFox = new Fox();
-        ElijahsFox.size = "small";
-        ElijahsFox.color = "red";
-        ElijahsFox.fur = "rough";
-        ElijahsFox.age = 4;
-        ElijahsFox.energy = 8;
-        ElijahsFox.name = "Goku";
-        ElijahsFox.describeSelf();
-
-
-        Dog PhillyBoySamDog = new Dog();
-        PhillyBoySamDog.size = "medium";
-        PhillyBoySamDog.color = "black";
-        PhillyBoySamDog.fur = "short";
-        PhillyBoySamDog.age = 2;
-        PhillyBoySamDog.energy = 9;
-        PhillyBoySamDog.limbs = "paws";
-        PhillyBoySamDog.name = "Widow";
-        PhillyBoySamDog.describeSelf();
-
-       Owner Elijah = new Owner();
-       Elijah.name = "Elijah";
-       Elijah.allPetsOwned.add(ElijahsCat);
-
-        Owner PhillyBoySam = new Owner ();
-        PhillyBoySam.name = "pbs";
-        PhillyBoySam.foodAmount = 15;
-        PhillyBoySam.patienceAmount = 12;
-        PhillyBoySam.allPetsOwned.add(PhillyBoySamDog);
-        // Pets and Owners do some action
-        rileysCat.kneadOn("hoodie");
-        rileysSnake.rollUpAndSleep();
-        rileysSnake.eat();
-        rileysSnake.play();
-
-        Loki.rollUpAndSleep();
-        Joey.rollUpAndSleep();
-        Joey.eat();
-        //Chris' pets' (and sibling's) actions
-        Fifi.kneadOn("blanket");
-        Fifi.eat();
-        Frogston.croak();
-        Frogston.eat();
-        Frogston.leap();
-        Chris.feed();
-        Polly.talk();
-
-        System.out.println(" ");
-        System.out.println("Let's introduce all of our Petsitters:");
         MonkeySitter owenMonkeySitter = new MonkeySitter();
         owenMonkeySitter.age = 17;
         owenMonkeySitter.location = "Philly";
         owenMonkeySitter.name = "Owen";
-        owenMonkeySitter.sitMonkey();
 
-        ChrisSibling.wave();
-        ChrisSibling.pet();
-        Polly.talk();
+        Pet_Sitter james = new Pet_Sitter("Pet Sitter", 26, "White", "James", "Male", "6'1", 20, 20);
+        james.petsToSit.add(charles);
+        james.petsToSit.add(greenbean);
 
-        Pet_Sitter james = new Pet_Sitter();
-        james.name = "James";
-        james.foodAmount = 20;
-        james.patienceAmount = 20;
-        james.cat1 = rileysCat;
-        james.snake1 = rileysSnake;
+
+        PetStoreOwner Kathy = new PetStoreOwner(37, "Kathy", " a Pet Store Owner", "White", "Female", "5'3", true, 50 );
 
         AnimalRescuer Jackie = new AnimalRescuer(56, "Jackie", "Animal Rescuer", "white", "female", "5'1", )
 
         System.out.println();
-        System.out.println("Let's introduce all of the Pet Sitters:");
+        System.out.println("Let's introduce all of our PERSONS:");
         james.describeSelf();
+        owenMonkeySitter.describeSelf();
+        ChrisSibling.describeSelf();
+        Kathy.describeSelf();
 
         System.out.println();
-        System.out.println("Now the Pet Sitters are going to do their job:");
-        james.walk(rileysSnake);
-        Loki.eat();
-        samGpanda.eat();
-        samGpanda.climb();
-        samGpanda.sleep();
-
-        Loki.eat();
-        Chris.feed();
-        Loki.eat();
-        Capy.sleep();
-        Capy.eat();
-        Polly.Mimic();
+        System.out.println("Let's see what our PERSONS can do:");
+        james.walk(greenbean);
+        owenMonkeySitter.sitMonkey();
+        ChrisSibling.wave();
+        ChrisSibling.pet();
     }
 }

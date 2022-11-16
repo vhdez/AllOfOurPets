@@ -4,9 +4,6 @@ public class Frog extends Pet {
     String croakSound;
 
     //Constructors
-    public Frog(){
-    }
-
     public Frog(String size, String color, int age, int energy, String name, String croakSound, String texture, Owner owner){
         super(size, color, age, energy, name, owner);
         this.texture = texture;
@@ -19,7 +16,7 @@ public class Frog extends Pet {
     }
     void eat() {
         energy = energy + 1;
-        System.out.println("Yum, now " + name + "'s fullness is at " + energy );
+        System.out.println("Yum, now " + name + "'s energy is at " + energy );
     }
     void croak() {
         System.out.println(name + " crooooooaks a hello.");
