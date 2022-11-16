@@ -22,6 +22,9 @@ public class Main {
         allOwners.add(riley);
         Owner Zane = new Owner("Zane", 7, 7);
         allOwners.add(Zane);
+        Owner siraj = new Owner("Siraj", 7, 7);
+        allOwners.add(siraj);
+
         Owner PhillyBoySam = new Owner ("Pbs", 10, 12);
         allOwners.add(PhillyBoySam);
         Owner Elijah = new Owner("Elijah", 10,4);
@@ -86,6 +89,10 @@ public class Main {
         allPets.add(charles);
         riley.allPetsOwned.add(charles);
 
+        Dog SirajsDog = new Dog("small", "grey and white", 4,10,"Smokey", siraj,"fluffy","arms and legds");
+        allPets.add(SirajsDog);
+        siraj.allPetsOwned.add(SirajsDog);
+
         Snake greenbean = new Snake("long", "green", 1, 3, "Greenbean", riley);
         allPets.add(greenbean);
         riley.allPetsOwned.add(greenbean);
@@ -149,18 +156,6 @@ public class Main {
         Chris.feed();
         Polly.talk();
         System.out.println();
-
-        Dog SirajsDog = new Dog();
-        SirajsDog.size = "small";
-        SirajsDog.color = "grey and white";
-        SirajsDog.fur = "fluffy";
-        SirajsDog.age = 4;
-        SirajsDog.limbs = "arms and legs";
-        SirajsDog.energy = 10;
-        SirajsDog.name = "Smokey";
-        SirajsDog.describeSelf();
-
-        // All of the Persons
 
         MonkeySitter owenMonkeySitter = new MonkeySitter();
         owenMonkeySitter.age = 17;
