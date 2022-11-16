@@ -171,6 +171,7 @@ public class Main {
         james.petsToSit.add(charles);
         james.petsToSit.add(greenbean);
 
+
         PetStoreOwner Kathy = new PetStoreOwner(37, "Kathy", " a Pet Store Owner", "White", "Female", "5'3", true, 50 );
 
         System.out.println();
