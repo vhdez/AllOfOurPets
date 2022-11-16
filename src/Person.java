@@ -25,7 +25,7 @@ public class Person {
     }
 
     void describeSelf() {
-        System.out.println("Hi my name is " + name + ", I am " + ethnicity + "and a " + gender + ". I am " + age + "years old. My occupation is:" + occupation + ".");
+        System.out.println("Hi my name is " + name + ", I am " + ethnicity + " and a " + gender + ". I am " + age + " years old. My occupation is:" + occupation + ".");
     }
 
 

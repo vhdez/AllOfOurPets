@@ -171,11 +171,14 @@ public class Main {
         james.petsToSit.add(charles);
         james.petsToSit.add(greenbean);
 
+        PetStoreOwner Kathy = new PetStoreOwner(37, "Kathy", " a Pet Store Owner", "White", "Female", "5'3", true, 50 );
+
         System.out.println();
         System.out.println("Let's introduce all of our PERSONS:");
         james.describeSelf();
         owenMonkeySitter.describeSelf();
         ChrisSibling.describeSelf();
+        Kathy.describeSelf();
 
         System.out.println();
         System.out.println("Let's see what our PERSONS can do:");
