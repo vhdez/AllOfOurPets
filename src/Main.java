@@ -174,11 +174,12 @@ public class Main {
 
         PetStoreOwner Kathy = new PetStoreOwner(37, "Kathy", " a Pet Store Owner", "White", "Female", "5'3", true, 50 );
 
-        AnimalRescuer Jackie = new AnimalRescuer(56, "Jackie", "Animal Rescuer", "white", "female", "5'1", )
+        AnimalRescuer Jackie = new AnimalRescuer(56, "Jackie", "Animal Rescuer", "white", "female", "5'1", 10, 10);
 
         System.out.println();
         System.out.println("Let's introduce all of our PERSONS:");
         james.describeSelf();
+        Jackie.describeSelf();
         owenMonkeySitter.describeSelf();
         ChrisSibling.describeSelf();
         Kathy.describeSelf();
