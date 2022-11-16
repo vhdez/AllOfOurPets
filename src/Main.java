@@ -167,12 +167,9 @@ public class Main {
         owenMonkeySitter.location = "Philly";
         owenMonkeySitter.name = "Owen";
 
-        Pet_Sitter james = new Pet_Sitter();
-        james.name = "James";
-        james.foodAmount = 20;
-        james.patienceAmount = 20;
-        james.cat1 = charles;
-        james.snake1 = greenbean;
+        Pet_Sitter james = new Pet_Sitter("Pet Sitter", 26, "White", "James", "Male", "6'1", 20, 20);
+        james.petsToSit.add(charles);
+        james.petsToSit.add(greenbean);
 
         System.out.println();
         System.out.println("Let's introduce all of our PERSONS:");

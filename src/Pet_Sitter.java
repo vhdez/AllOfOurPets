@@ -2,13 +2,15 @@ import java.util.ArrayList;
 
 public class Pet_Sitter extends Person{
     ArrayList<Pet> petsToSit;
-    Dog dog1;
-    Dog dog2;
-    Cat cat1;
-    Cat cat2;
-    Snake snake1;
     int foodAmount;
     int patienceAmount;
+
+    public Pet_Sitter(String occupation, int age, String ethnicity, String name, String gender, String height, int foodAmount, int patienceAmount) {
+        super(age, name,occupation, ethnicity, gender, height);
+        this.petsToSit = new ArrayList<>();
+        this.foodAmount = foodAmount;
+        this.patienceAmount = patienceAmount;
+    }
 
     void feed(Dog dog) {
         if (foodAmount > 0) {
@@ -61,20 +63,8 @@ public class Pet_Sitter extends Person{
     }
     void describeSelf() {
         System.out.println("Pet Sitter " + name + " has " + foodAmount + " pieces of food and " + patienceAmount + " remaining patience.");
-        if (dog1 != null ) {
-            System.out.println("Pet Sitter " + name + " is taking care of  " + dog1.name);
-        }
-        if (dog2 != null ) {
-            System.out.println("Pet Sitter " + name + " is taking care of  " + dog2.name);
-        }
-        if (cat1 != null ) {
-            System.out.println("Pet Sitter " + name + " is taking care of  " + cat1.name);
-        }
-        if (cat2 != null ) {
-            System.out.println("Pet Sitter " + name + " is taking care of  " + cat2.name);
-        }
-        if (snake1 != null ) {
-            System.out.println("Pet Sitter " + name + " is taking care of  " + snake1.name);
+        for (Pet pet: petsToSit) {
+            System.out.println("Pet Sitter " + name + " is taking care of " + pet.name);
         }
     }
 
