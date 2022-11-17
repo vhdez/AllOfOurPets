@@ -6,7 +6,7 @@ class Main {
     public static void main(String[] args) {
         // Construct all of the Owners
         ArrayList<Owner> allOwners = new ArrayList<>();
-        Owner mrH = new Owner("Mr. Hernandez", 10, 5, 4324325235235235);
+        Owner mrH = new Owner("Mr. Hernandez", 10, 5, 4324325235235235l);
         allOwners.add(mrH);
         Owner mrLatimer = new Owner("Mr. Latimer", 8,2);
         allOwners.add(mrLatimer);
