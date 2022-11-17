@@ -6,7 +6,7 @@ class Main {
     public static void main(String[] args) {
         // Construct all of the Owners
         ArrayList<Owner> allOwners = new ArrayList<>();
-        Owner mrH = new Owner("Mr. Hernandez", 10, 5, 4324325235235235l);
+        Owner mrH = new Owner("Mr. Hernandez", 10, 5, 4324325235235235);
         allOwners.add(mrH);
         Owner mrLatimer = new Owner("Mr. Latimer", 8,2);
         allOwners.add(mrLatimer);
@@ -182,6 +182,7 @@ class Main {
         System.out.println();
         System.out.println("Let's see what our PERSONS can do:");
         james.walk(greenbean);
+        james.getPaidBy(mrH);
         owenMonkeySitter.sitMonkey();
         ChrisSibling.wave();
         ChrisSibling.pet();
