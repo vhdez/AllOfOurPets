@@ -2,28 +2,43 @@ package edu.sla.allPets;
 
 public class Frog extends Pet {
    //Fields
-    String texture;
-    String croakSound;
+   private String texture;
+    private String croakSound;
 
     //Constructors
     public Frog(String size, String color, int age, int energy, String name, String croakSound, String texture, Owner owner){
         super(size, color, age, energy, name, owner);
-        this.texture = texture;
-        this.croakSound = croakSound;
+        this.setTexture(texture);
+        this.setCroakSound(croakSound);
     }
 
     //Methods
     void describeSelf() {
-        System.out.println("Ribbit!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " frog with a" + croakSound + " croak.");
+        System.out.println("Ribbit!  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " frog with a" + getCroakSound() + " croak.");
     }
     void eat() {
-        energy = energy + 1;
-        System.out.println("Yum, now " + name + "'s energy is at " + energy );
+        setEnergy(getEnergy() + 1);
+        System.out.println("Yum, now " + getName() + "'s energy is at " + getEnergy());
     }
     void croak() {
-        System.out.println(name + " crooooooaks a hello.");
+        System.out.println(getName() + " crooooooaks a hello.");
     }
 
-    void leap(){System.out.println(name + " leaps over Fifi.");}
+    void leap(){System.out.println(getName() + " leaps over Fifi.");}
 
+    String getTexture() {
+        return texture;
+    }
+
+    void setTexture(String texture) {
+        this.texture = texture;
+    }
+
+    String getCroakSound() {
+        return croakSound;
+    }
+
+    void setCroakSound(String croakSound) {
+        this.croakSound = croakSound;
+    }
 }

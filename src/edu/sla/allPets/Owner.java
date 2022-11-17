@@ -21,22 +21,22 @@ class Owner extends Person{
         this.setCreditCardNumber(creditCardNumber);
     }
 
-    public Owner(String name, int foodAmount, int patienceAmount, long creditCardNumber) {
+    public Owner(String name, int foodAmount, int patienceAmount) {
+        super(0, name, "unknown", "unknown", "unknown", "unknown");
         this.setAllPetsOwned(new ArrayList<>());
-        this.name = name;
+        this.setName(name);
+        this.setFoodAmount(foodAmount);
+        this.setPatienceAmount(patienceAmount);
+    }
+
+    public Owner(String name, int foodAmount, int patienceAmount, long c) {
+        super(0, name, "unknown", "unknown", "unknown", "unknown");
+        this.setAllPetsOwned(new ArrayList<>());
+        this.setName(name);
         this.setFoodAmount(foodAmount);
         this.setPatienceAmount(patienceAmount);
         this.setCreditCardNumber(creditCardNumber);
     }
-
-    public Owner(String name, int foodAmount, int patienceAmount) {
-        this.setAllPetsOwned(new ArrayList<>());
-        this.name = name;
-        this.setFoodAmount(foodAmount);
-        this.setPatienceAmount(patienceAmount);
-    }
-
-
 
     // methods
     void feed() {
@@ -44,9 +44,9 @@ class Owner extends Person{
             if (getFoodAmount() > 0) {
                 setFoodAmount(getFoodAmount() - 1);
                 pet.eat();
-                System.out.println(name + " just fed " + pet.name);
+                System.out.println(getName() + " just fed " + pet.getName());
             } else {
-                System.out.println(name + " CANNOT feed " + pet.name);
+                System.out.println(getName() + " CANNOT feed " + pet.getName());
             }
         }
     }
@@ -61,9 +61,9 @@ class Owner extends Person{
     }
 
     void describeSelf() {
-        System.out.println("Owner " + name + " has " + getFoodAmount() + " pieces of food and " + getPatienceAmount() + " remaining patience.");
+        System.out.println("Owner " + getName() + " has " + getFoodAmount() + " pieces of food and " + getPatienceAmount() + " remaining patience.");
         for (Pet pet: getAllPetsOwned()) {
-            System.out.println("Owner " + name + " owns " + pet.name);
+            System.out.println("Owner " + getName() + " owns " + pet.getName());
         }
     }
 
@@ -92,12 +92,12 @@ class Owner extends Person{
     }
 
     public long getCreditCardNumber() {
-        System.out.println("ALERT.  Someone is getting " + name + "'s credit card!");
+        System.out.println("ALERT.  Someone is getting " + getName() + "'s credit card!");
         return creditCardNumber;
     }
 
     public void setCreditCardNumber(long creditCardNumber) {
-        System.out.println("ALERT.  Someone is changing " + name + "'s credit card!");
+        System.out.println("ALERT.  Someone is changing " + getName() + "'s credit card!");
         this.creditCardNumber = creditCardNumber;
     }
 

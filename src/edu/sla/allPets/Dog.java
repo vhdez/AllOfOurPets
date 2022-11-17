@@ -2,39 +2,51 @@ package edu.sla.allPets;
 
 public class Dog extends Pet {
     // Fields
-    String fur;
-    String limbs;
+    private String fur;
+    private String limbs;
 
     // constructors
-    public Dog() {
-    }
-
     public Dog(String size, String color, int age, int energy, String name, Owner owner, String fur, String limbs) {
         super(size, color, age, energy, name, owner);
-        this.fur = fur;
-        this.limbs = limbs;
+        this.setFur(fur);
+        this.setLimbs(limbs);
     }
 
     // Methods
     void describeSelf() {
-        System.out.println("Ruff!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " dog with " + fur + " fur.");
+        System.out.println("Ruff!  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " dog with " + getFur() + " fur.");
     }
 
     void bark() {
-        System.out.println(name + " says: Woof!");
-        if (owner != null) {
-            owner.setPatienceAmount(owner.getPatienceAmount() - 1);
+        System.out.println(getName() + " says: Woof!");
+        if (getOwner() != null) {
+            getOwner().setPatienceAmount(getOwner().getPatienceAmount() - 1);
         }
     }
 
     void sleep() {
-        energy = energy + 1;
-        System.out.println("Rested... now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() + 1);
+        System.out.println("Rested... now " + getName() + "'s energy is at " + getEnergy());
     }
 
     void play() {
-        energy = energy - 1;
-        System.out.println("Fun!, now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() - 1);
+        System.out.println("Fun!, now " + getName() + "'s energy is at " + getEnergy());
     }
 
+    String getFur() {
+        return fur;
+    }
+
+    void setFur(String fur) {
+        this.fur = fur;
+    }
+
+    String getLimbs() {
+        return limbs;
+    }
+
+    void setLimbs(String limbs) {
+        this.limbs = limbs;
+    }
 }

@@ -2,43 +2,87 @@ package edu.sla.allPets;
 
 public class Pet {
     // Fields
-    String size;
-    String color;
-    int age;
-    int energy;
-    String name;
-    Owner owner;
+    private String size;
+    private String color;
+    private int age;
+    private int energy;
+    private String name;
+    private Owner owner;
 
     // constructors
-
-    public Pet() {
-    }
-
     public Pet(String size, String color, int age, int energy, String name, Owner owner) {
-        this.size = size;
-        this.color = color;
-        this.age = age;
-        this.energy = energy;
-        this.name = name;
-        this.owner = owner;
+        this.setSize(size);
+        this.setColor(color);
+        this.setAge(age);
+        this.setEnergy(energy);
+        this.setName(name);
+        this.setOwner(owner);
     }
 
     void describeSelf() {
-        System.out.println("Pet says:  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " pet.");
-        System.out.println("I just stole my owner " + owner.name + "'s credit card number.  Its " + owner.getCreditCardNumber());
+        System.out.println("Pet says:  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " pet.");
+        System.out.println("I just stole my owner " + getOwner().getName() + "'s credit card number.  Its " + getOwner().getCreditCardNumber());
     }
 
     void eat() {
-        if (owner != null && owner.getFoodAmount() > 0) {
-            energy = energy + 1;
-            System.out.println("Yay feeding time! now " + name + "'s energy is at " + energy);
+        if (getOwner() != null && getOwner().getFoodAmount() > 0) {
+            setEnergy(getEnergy() + 1);
+            System.out.println("Yay feeding time! now " + getName() + "'s energy is at " + getEnergy());
         } else {
             System.out.println("SAD FACE I don't have an owner to feed me!");
         }
     }
 
     void walk() {
-        energy = energy - 1;
-        System.out.println("Yay!, I'm going on a walk. Now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() - 1);
+        System.out.println("Yay!, I'm going on a walk. Now " + getName() + "'s energy is at " + getEnergy());
+    }
+
+    String getSize() {
+        return size;
+    }
+
+    void setSize(String size) {
+        this.size = size;
+    }
+
+    String getColor() {
+        return color;
+    }
+
+    void setColor(String color) {
+        this.color = color;
+    }
+
+    int getAge() {
+        return age;
+    }
+
+    void setAge(int age) {
+        this.age = age;
+    }
+
+    int getEnergy() {
+        return energy;
+    }
+
+    void setEnergy(int energy) {
+        this.energy = energy;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    void setName(String name) {
+        this.name = name;
+    }
+
+    Owner getOwner() {
+        return owner;
+    }
+
+    void setOwner(Owner owner) {
+        this.owner = owner;
     }
 }

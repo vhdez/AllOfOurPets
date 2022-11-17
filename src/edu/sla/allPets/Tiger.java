@@ -2,53 +2,60 @@ package edu.sla.allPets;
 
 public class Tiger extends Pet {
     // Fields
-    String fur;
-
-
-
-    boolean hasClaws;
+    private String fur;
+    private boolean hasClaws;
 
     // Constructors
-    public Tiger() {
-    }
-
     public Tiger(String size, String color, int age, int energy, String name, Owner owner, String fur, boolean hasClaws) {
         super(size, color, age, energy, name, owner);
-        this.fur = fur;
-        this.hasClaws = hasClaws;
+        this.setFur(fur);
+        this.setHasClaws(hasClaws);
     }
 
     // Methods
     void describeSelf() {
-        System.out.println("Roar!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " tiger with " + fur + " fur.");
+        System.out.println("Roar!  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " tiger with " + getFur() + " fur.");
     }
 
     void sleep() {
-        energy = energy + 2;
-        System.out.println(name + " slept.");
+        setEnergy(getEnergy() + 2);
+        System.out.println(getName() + " slept.");
     }
 
     void play() {
-        energy = energy - 1;
-        System.out.println(name + " played around.");
+        setEnergy(getEnergy() - 1);
+        System.out.println(getName() + " played around.");
     }
 
     void attack(String what) {
-        energy = energy - 1;
-        System.out.println(name + " attacked.");
+        setEnergy(getEnergy() - 1);
+        System.out.println(getName() + " attacked.");
 
         }
 
     void acknowledging() {
-        System.out.println(name + " roars.");
+        System.out.println(getName() + " roars.");
     }
 
     void walk() {
-        System.out.println(name + " walked around.");
+        System.out.println(getName() + " walked around.");
     }
 
 
+    String getFur() {
+        return fur;
+    }
 
+    void setFur(String fur) {
+        this.fur = fur;
+    }
 
+    boolean isHasClaws() {
+        return hasClaws;
+    }
+
+    void setHasClaws(boolean hasClaws) {
+        this.hasClaws = hasClaws;
+    }
 }
 

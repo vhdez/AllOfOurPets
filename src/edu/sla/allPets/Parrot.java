@@ -2,30 +2,44 @@ package edu.sla.allPets;
 
 public class Parrot extends Pet{
     //fields
-    String Mimic;
-    boolean Fly;
+    private String Mimic;
+    private boolean Fly;
 
-    public Parrot() {
-    }
     public Parrot(String size, String color, int age, int energy, String name, Owner owner, String Mimic, boolean Fly) {
         super(size, color, age, energy, name, owner);
-        this.Mimic = Mimic;
-        this.Fly = Fly;
+        this.setMimic(Mimic);
+        this.setFly(Fly);
     }
 
     void describeSelf() {
-        System.out.println("Squawk!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " parrot");
+        System.out.println("Squawk!  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " parrot");
     }
 
     void eat() {
-        energy = energy + 1;
-        System.out.println("Yum, now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() + 1);
+        System.out.println("Yum, now " + getName() + "'s energy is at " + getEnergy());
     }
 
     void talk(){
-        System.out.println( name  + " wants a cracker ");
+        System.out.println( getName() + " wants a cracker ");
     }
-    void Mimic (){System.out.println( "(Gia says I love you) and " + name + " says I love you "); }
+    void Mimic (){System.out.println( "(Gia says I love you) and " + getName() + " says I love you "); }
+
+    String getMimic() {
+        return Mimic;
+    }
+
+    void setMimic(String mimic) {
+        Mimic = mimic;
+    }
+
+    boolean isFly() {
+        return Fly;
+    }
+
+    void setFly(boolean fly) {
+        Fly = fly;
+    }
 }
 
 

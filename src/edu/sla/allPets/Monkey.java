@@ -2,52 +2,79 @@ package edu.sla.allPets;
 
 public class Monkey extends Pet {
     // Fields
-    String fur;
-    int benchWeight;
-
-    int bodyFat;
-
-    String tail;
-
-    public Monkey(){
-    }
+    private String fur;
+    private int benchWeight;
+    private int bodyFat;
+    private String tail;
 
     public Monkey(String size, String color, int age, int energy, String name, Owner owner, String fur, int benchWeight, int bodyFat, String tail) {
         super(size, color, age, energy, name, owner);
-        this.fur = fur;
-        this.benchWeight = benchWeight;
-        this.bodyFat = bodyFat;
-        this.tail = tail;
+        this.setFur(fur);
+        this.setBenchWeight(benchWeight);
+        this.setBodyFat(bodyFat);
+        this.setTail(tail);
     }
 
 
     // Methods
     void describeSelf() {
-        System.out.println("WOO WOO!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " monkey with " + fur + " fur and my tail is " + tail+ " . I can bench " + benchWeight + "kg and my body fat percentage is " + bodyFat + ".");
+        System.out.println("WOO WOO!  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " monkey with " + getFur() + " fur and my tail is " + getTail() + " . I can bench " + getBenchWeight() + "kg and my body fat percentage is " + getBodyFat() + ".");
     }
 
     void WOOP() {
-        System.out.println(name + " says: WOO!");
-        if (owner != null) {
-            owner.setPatienceAmount(owner.getPatienceAmount() - 1);
+        System.out.println(getName() + " says: WOO!");
+        if (getOwner() != null) {
+            getOwner().setPatienceAmount(getOwner().getPatienceAmount() - 1);
         }
     }
     void eat() {
-        if (owner != null && owner.getFoodAmount() > 0) {
-            energy = energy + 1;
-            System.out.println("Yum, now " + name + "'s energy is at " + energy);
+        if (getOwner() != null && getOwner().getFoodAmount() > 0) {
+            setEnergy(getEnergy() + 1);
+            System.out.println("Yum, now " + getName() + "'s energy is at " + getEnergy());
         } else {
             System.out.println("WOO WOO I don't have an owner to feed me!");
         }
     }
 
     void sleep() {
-        energy = energy + 1;
-        System.out.println("Yum, now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() + 1);
+        System.out.println("Yum, now " + getName() + "'s energy is at " + getEnergy());
     }
 
     void play() {
-        energy = energy - 1;
-        System.out.println("Fun!, now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() - 1);
+        System.out.println("Fun!, now " + getName() + "'s energy is at " + getEnergy());
+    }
+
+    String getFur() {
+        return fur;
+    }
+
+    void setFur(String fur) {
+        this.fur = fur;
+    }
+
+    int getBenchWeight() {
+        return benchWeight;
+    }
+
+    void setBenchWeight(int benchWeight) {
+        this.benchWeight = benchWeight;
+    }
+
+    int getBodyFat() {
+        return bodyFat;
+    }
+
+    void setBodyFat(int bodyFat) {
+        this.bodyFat = bodyFat;
+    }
+
+    String getTail() {
+        return tail;
+    }
+
+    void setTail(String tail) {
+        this.tail = tail;
     }
 }

@@ -1,33 +1,46 @@
 package edu.sla.allPets;
 
 public class capybara extends Pet{
-    String fur;
-    boolean hasClaws;
-
-    public capybara(){
-    }
+    private String fur;
+    private boolean hasClaws;
 
     public capybara(String size, String color, int age, int energy, String name, Owner owner, String fur, boolean hasClaws) {
         super(size, color, age, energy, name, owner);
-        this.fur = fur;
-        this.hasClaws = hasClaws;
+        this.setFur(fur);
+        this.setHasClaws(hasClaws);
     }
 
     void describeSelf() {
-        System.out.println("Squeak!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " edu.sla.allPets.capybara with " + fur + " fur.");
+        System.out.println("Squeak!  I'm " + getName() + ", a " + getSize() + "-sized, " + getAge() + " year-old " + getColor() + " edu.sla.allPets.capybara with " + getFur() + " fur.");
     }
 
     void swim() {
-        System.out.println(name + " went for a swim.");
+        System.out.println(getName() + " went for a swim.");
     }
 
     void sleep() {
-        energy = energy + 1;
-        System.out.println(name + " went to sleep");
+        setEnergy(getEnergy() + 1);
+        System.out.println(getName() + " went to sleep");
     }
 
     void eat() {
-        energy = energy + 1;
-        System.out.println("Yumm, now " + name + "'s energy is at " + energy);
+        setEnergy(getEnergy() + 1);
+        System.out.println("Yumm, now " + getName() + "'s energy is at " + getEnergy());
+    }
+
+    String getFur() {
+        return fur;
+    }
+
+    void setFur(String fur) {
+        this.fur = fur;
+    }
+
+    boolean isHasClaws() {
+        return hasClaws;
+    }
+
+    void setHasClaws(boolean hasClaws) {
+        this.hasClaws = hasClaws;
     }
 }

@@ -26,7 +26,6 @@ class Main {
         allOwners.add(Zane);
         Owner siraj = new Owner("Siraj", 7, 7);
         allOwners.add(siraj);
-
         Owner PhillyBoySam = new Owner ("Pbs", 10, 12);
         allOwners.add(PhillyBoySam);
         Owner Elijah = new Owner("Elijah", 10,4);
@@ -34,79 +33,60 @@ class Main {
 
         // Construct all of the Pets
         ArrayList<Pet> allPets = new ArrayList<>();
-
         Dog widow = new Dog("large", "black", 2, 18, "Widow", PhillyBoySam, "coarse", "paws");
         allPets.add(widow);
         PhillyBoySam.getAllPetsOwned().add(widow);
-
         Cat garfield = new Cat("fat", "orange", 35, 2, "Garfield", mrH, "soft", false);
         allPets.add(garfield);
         mrH.getAllPetsOwned().add(garfield);
-
         Cat samGcat = new Cat("large","orange and white",4,9,"Pickles",samG, "soft",true);
         allPets.add(samGcat);
         samG.getAllPetsOwned().add(samGcat);
-
         Panda samGpanda = new Panda("small","black and white",2,2,"Kikkoman",samG,"soft","climbing","panda","short");
         allPets.add(samGpanda);
         samG.getAllPetsOwned().add(samGpanda);
-
         capybara Capy = new capybara("chunky", "brown", 2, 3, "Capy", Dinajda, "short", true);
         allPets.add(Capy);
         Dinajda.getAllPetsOwned().add(Capy);
-
         Cat Loki = new Cat("muscular", "grey tabby", 3, 7, "Loki", Dinajda, "smooth", true);
         allPets.add(Loki);
         Dinajda.getAllPetsOwned().add(Loki);
-
         allPets.add(new Pet("large","orange and white",4,9,"Pickles",samG ));
-
         Monkey owensMonkey = new Monkey("small", "brown", 17, 10, "edu.sla.allPets.Monkey", owen, "Soft", 1000, 1, "long");
         allPets.add(owensMonkey);
         owen.getAllPetsOwned().add(owensMonkey);
-
         Cat owensCat = new Cat("small", "white", 1, 10, "Snow",  owen, "Soft", false);
         allPets.add(owensCat);
         owen.getAllPetsOwned().add(owensCat);
-
         Cat Joey = new Cat("Chunky", "Black and White", 2, 10, "Joey", Gia, "Fluffy" ,false);
         allPets.add(Joey);
         Gia.getAllPetsOwned().add(Joey);
-
-        //Chris' Pets/edu.sla.allPets.Person
         Cat Fifi = new Cat("medium","black",14, 7, "Fifi", Chris, "soft", true);
         Frog Frogston = new Frog("tiny","brown", 2, 5, "Frogton", " baritone", "smooth", Chris);
         Sibling ChrisSibling = new Sibling("Alyssa", 23, "unemployed", "Italian", "sister", "Millersville University");
         Chris.getAllPetsOwned().add(Fifi);
         Chris.getAllPetsOwned().add(Frogston);
-        Chris.mySiblings.add(ChrisSibling);
+        Chris.getMySiblings().add(ChrisSibling);
         allPets.add(Fifi);
         allPets.add(Frogston);
-
         Parrot Polly = new Parrot ("small", "Blue, Red and Yellow", 5, 2, "Polly", Gia,"Polly want a cracker",true );
         allPets.add(Polly);
         Gia.getAllPetsOwned().add(Polly);
-
         Cat charles = new Cat("chubby", "orange", 2, 3, "Charles", riley, "soft", true);
         allPets.add(charles);
         riley.getAllPetsOwned().add(charles);
-
         Dog SirajsDog = new Dog("small", "grey and white", 4,10,"Smokey", siraj,"fluffy","arms and legds");
         allPets.add(SirajsDog);
         siraj.getAllPetsOwned().add(SirajsDog);
-
         Snake greenbean = new Snake("long", "green", 1, 3, "Greenbean", riley);
         allPets.add(greenbean);
         riley.getAllPetsOwned().add(greenbean);
-
         Cat Atticus = new Cat("medium","grey",2, 6, "Atticus", Elijah, "soft", true);
         allPets.add(Atticus);
         Elijah.getAllPetsOwned().add(Atticus);
-
         Fox Geranamo = new Fox("small","red",4, 8, "Geranamo", Elijah, "rough", true,"HAHAHHAHAHA");
         allPets.add(Geranamo);
         Elijah.getAllPetsOwned().add(Geranamo);
-
         Tiger bronald = new Tiger("large", "Orange/White", 2, 7, "bronald", Zane, "soft", true);
         allPets.add(bronald);
         Zane.getAllPetsOwned().add(bronald);
@@ -159,14 +139,10 @@ class Main {
         Polly.talk();
         System.out.println();
 
-        MonkeySitter owenMonkeySitter = new MonkeySitter();
-        owenMonkeySitter.age = 17;
-        owenMonkeySitter.location = "Philly";
-        owenMonkeySitter.name = "Owen";
-
+        MonkeySitter owenMonkeySitter = new MonkeySitter(17, 0,"Philly","Owen", owen);
         Pet_Sitter james = new Pet_Sitter("edu.sla.allPets.Pet Sitter", 26, "White", "James", "Male", "6'1", 20, 20);
-        james.petsToSit.add(charles);
-        james.petsToSit.add(greenbean);
+        james.getPetsToSit().add(charles);
+        james.getPetsToSit().add(greenbean);
 
         PetStoreOwner Kathy = new PetStoreOwner(37, "Kathy", " a edu.sla.allPets.Pet Store edu.sla.allPets.Owner", "White", "Female", "5'3", true, 50 );
         AnimalRescuer Jackie = new AnimalRescuer(56, "Jackie", "Animal Rescuer", "white", "female", "5'1", 10, 10);
