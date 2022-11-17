@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package edu.sla.allPets;
 
 public class PetStoreOwner extends Person {
     boolean experienced;

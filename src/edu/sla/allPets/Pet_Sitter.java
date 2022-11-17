@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 import java.util.ArrayList;
 
 public class Pet_Sitter extends Person{
@@ -61,10 +63,15 @@ public class Pet_Sitter extends Person{
     void walk(Snake snake) {
         snake.walk();
     }
+
+    void getPaidBy(Owner owner) {
+        System.out.println("Pet sitter" + name + " just got paid by " + owner.name + "'s credit card number " + owner.getCreditCardNumber());
+    }
+
     void describeSelf() {
-        System.out.println("Pet Sitter " + name + " has " + foodAmount + " pieces of food and " + patienceAmount + " remaining patience.");
+        System.out.println("edu.sla.allPets.Pet Sitter " + name + " has " + foodAmount + " pieces of food and " + patienceAmount + " remaining patience.");
         for (Pet pet: petsToSit) {
-            System.out.println("Pet Sitter " + name + " is taking care of " + pet.name);
+            System.out.println("edu.sla.allPets.Pet Sitter " + name + " is taking care of " + pet.name);
         }
     }
 

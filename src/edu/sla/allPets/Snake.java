@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Snake extends Pet {
 
     public Snake(String size, String color, int age, int energy, String name, Owner owner) {

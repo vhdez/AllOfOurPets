@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Pet {
     // Fields
     String size;
@@ -23,10 +25,11 @@ public class Pet {
 
     void describeSelf() {
         System.out.println("Pet says:  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " pet.");
+        System.out.println("I just stole my owner " + owner.name + "'s credit card number.  Its " + owner.getCreditCardNumber());
     }
 
     void eat() {
-        if (owner != null && owner.foodAmount > 0) {
+        if (owner != null && owner.getFoodAmount() > 0) {
             energy = energy + 1;
             System.out.println("Yay feeding time! now " + name + "'s energy is at " + energy);
         } else {

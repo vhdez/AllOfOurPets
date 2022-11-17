@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Dog extends Pet {
     // Fields
     String fur;
@@ -21,7 +23,7 @@ public class Dog extends Pet {
     void bark() {
         System.out.println(name + " says: Woof!");
         if (owner != null) {
-            owner.patienceAmount = owner.patienceAmount - 1;
+            owner.setPatienceAmount(owner.getPatienceAmount() - 1);
         }
     }
 

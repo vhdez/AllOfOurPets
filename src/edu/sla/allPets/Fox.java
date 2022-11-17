@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Fox extends Pet{
     // Fields
     String fur;

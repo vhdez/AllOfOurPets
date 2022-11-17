@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class MonkeySitter {
     int age;
 
@@ -13,7 +15,7 @@ public class MonkeySitter {
     }
 
     void sitMonkey(){
-        if (owner != null && owner.moneyAmount > 0) {
+        if (owner != null && owner.getMoneyAmount() > 0) {
             money = money + 1;
             System.out.println("Yay now I have $" + money);
         } else {

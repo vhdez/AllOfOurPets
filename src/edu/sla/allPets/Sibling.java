@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Sibling extends Person {
     String school;
 

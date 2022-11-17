@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class AnimalRescuer extends Person{
 
     int patience;

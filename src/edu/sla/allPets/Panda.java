@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Panda extends Pet {
         // Fields
 
@@ -6,7 +8,7 @@ public class Panda extends Pet {
         String species;
         String height;
 
-    public Panda(String size, String color, int age, int energy, String name, Owner owner, String fur, String pandaAbility, String Species, String height) {
+    public Panda(String size, String color, int age, int energy, String name, Owner owner, String fur, String pandaAbility, String species, String height) {
         super(size, color, age, energy, name, owner);
         this.fur = fur;
         this.pandaAbility = pandaAbility;
@@ -19,7 +21,7 @@ public class Panda extends Pet {
         }
 
         void eat() {
-            if (owner != null && owner.foodAmount > 0) {
+            if (owner != null && owner.getFoodAmount() > 0) {
                 energy = energy + 1;
                 System.out.println("Yum, now " + name + "'s energy is at " + energy);
             } else {

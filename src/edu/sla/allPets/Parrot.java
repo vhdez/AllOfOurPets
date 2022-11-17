@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Parrot extends Pet{
     //fields
     String Mimic;

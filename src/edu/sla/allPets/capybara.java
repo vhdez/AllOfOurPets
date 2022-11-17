@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class capybara extends Pet{
     String fur;
     boolean hasClaws;
@@ -12,7 +14,7 @@ public class capybara extends Pet{
     }
 
     void describeSelf() {
-        System.out.println("Squeak!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " capybara with " + fur + " fur.");
+        System.out.println("Squeak!  I'm " + name + ", a " + size + "-sized, " + age + " year-old " + color + " edu.sla.allPets.capybara with " + fur + " fur.");
     }
 
     void swim() {

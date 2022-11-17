@@ -1,3 +1,5 @@
+package edu.sla.allPets;
+
 public class Monkey extends Pet {
     // Fields
     String fur;
@@ -27,11 +29,11 @@ public class Monkey extends Pet {
     void WOOP() {
         System.out.println(name + " says: WOO!");
         if (owner != null) {
-            owner.patienceAmount = owner.patienceAmount - 1;
+            owner.setPatienceAmount(owner.getPatienceAmount() - 1);
         }
     }
     void eat() {
-        if (owner != null && owner.foodAmount > 0) {
+        if (owner != null && owner.getFoodAmount() > 0) {
             energy = energy + 1;
             System.out.println("Yum, now " + name + "'s energy is at " + energy);
         } else {
